@@ -1,0 +1,2382 @@
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<198.6.255.40>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	198.6.255.40
+LIG = lig -b -d -t 3 -c 3 -m 198.6.255.40   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 198.6.255.40 (198.6.255.40) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=1.10800
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 198.6.255.40 (198.6.255.40) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.13900
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<202.51.247.10>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	202.51.247.10
+LIG = lig -b -d -t 3 -c 3 -m 202.51.247.10   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 202.51.247.10 (202.51.247.10) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.27800
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 202.51.247.10 (202.51.247.10) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=0.28900
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<202.214.86.252>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	202.214.86.252
+LIG = lig -b -d -t 3 -c 3 -m 202.214.86.252   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 202.214.86.252 (202.214.86.252) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.19300
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 202.214.86.252 (202.214.86.252) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=0.99700
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<173.36.254.164>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	173.36.254.164
+LIG = lig -b -d -t 3 -c 3 -m 173.36.254.164   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 173.36.254.164 (173.36.254.164) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.10100
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 173.36.254.164 (173.36.254.164) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=0.12300
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<193.162.145.50>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	193.162.145.50
+LIG = lig -b -d -t 3 -c 3 -m 193.162.145.50   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 193.162.145.50 (193.162.145.50) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.19000
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 193.162.145.50 (193.162.145.50) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=199.119.73.6
+||RTT=0.18800
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<217.8.98.42>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	217.8.98.42
+LIG = lig -b -d -t 3 -c 3 -m 217.8.98.42   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 217.8.98.42 (217.8.98.42) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.17600
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.98.42 (217.8.98.42) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=0.19500
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2001:418:4:c013:beef:caca:0:2>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	2001:418:4:c013:beef:caca:0:2
+LIG = lig -b -d -t 3 -c 3 -m 2001:418:4:c013:beef:caca:0:2   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 199.119.75.48 (199.119.75.48) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<217.8.97.6>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	217.8.97.6
+LIG = lig -b -d -t 3 -c 3 -m 217.8.97.6   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 217.8.97.6 (217.8.97.6) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.18300
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.97.6 (217.8.97.6) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=0.99600
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<206.223.132.89>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	206.223.132.89
+LIG = lig -b -d -t 3 -c 3 -m 206.223.132.89   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 206.223.132.89 (206.223.132.89) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=96.56.153.211
+|RTT=1.15700
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 206.223.132.89 (206.223.132.89) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.14400
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2001:67c:21b4:110::b>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	2001:67c:21b4:110::b
+LIG = lig -b -d -t 3 -c 3 -m 2001:67c:21b4:110::b   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 199.119.75.48 (199.119.75.48) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<149.20.48.77>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	149.20.48.77
+LIG = lig -b -d -t 3 -c 3 -m 149.20.48.77   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 149.20.48.77 (149.20.48.77) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.09500
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 149.20.48.77 (149.20.48.77) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=199.119.73.6
+||RTT=0.09500
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2001:4f8:3:d::61>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	2001:4f8:3:d::61
+LIG = lig -b -d -t 3 -c 3 -m 2001:4f8:3:d::61   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=::ffff:96.56.153.211
+|RTT=1.00700
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+||Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 199.119.75.48 (199.119.75.48) ...
+||Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 199.119.75.48 (199.119.75.48) ...
+||Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 199.119.75.48 (199.119.75.48) ...
+||*** No map-reply received ***
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<198.6.255.37>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	198.6.255.37
+LIG = lig -b -d -t 3 -c 3 -m 198.6.255.37   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 198.6.255.37 (198.6.255.37) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=1.10400
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 198.6.255.37 (198.6.255.37) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.11600
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2001:67c:21b4:109::b>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	2001:67c:21b4:109::b
+LIG = lig -b -d -t 3 -c 3 -m 2001:67c:21b4:109::b   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 199.119.75.48 (199.119.75.48) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<217.8.98.46>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	217.8.98.46
+LIG = lig -b -d -t 3 -c 3 -m 217.8.98.46   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 217.8.98.46 (217.8.98.46) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.17900
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.98.46 (217.8.98.46) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=0.97300
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<149.20.48.61>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	149.20.48.61
+LIG = lig -b -d -t 3 -c 3 -m 149.20.48.61   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 149.20.48.61 (149.20.48.61) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.09600
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 149.20.48.61 (149.20.48.61) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=199.119.73.6
+||RTT=0.10300
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<195.50.116.18>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	195.50.116.18
+LIG = lig -b -d -t 3 -c 3 -m 195.50.116.18   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 195.50.116.18 (195.50.116.18) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.15800
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 195.50.116.18 (195.50.116.18) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=199.119.73.6
+||RTT=0.15600
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2401:2000:6660::5>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	2401:2000:6660::5
+LIG = lig -b -d -t 3 -c 3 -m 2401:2000:6660::5   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=::ffff:96.56.153.211
+|RTT=1.01700
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+||Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 199.119.75.48 (199.119.75.48) ...
+||Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 199.119.75.48 (199.119.75.48) ...
+||Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 199.119.75.48 (199.119.75.48) ...
+||*** No map-reply received ***
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<198.6.255.40>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	198.6.255.40
+LIG = lig -b -d -t 3 -c 3 -m 198.6.255.40   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 198.6.255.40 (198.6.255.40) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=96.56.153.211
+|RTT=1.12500
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 198.6.255.40 (198.6.255.40) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.12600
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<202.51.247.10>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	202.51.247.10
+LIG = lig -b -d -t 3 -c 3 -m 202.51.247.10   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 202.51.247.10 (202.51.247.10) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.27400
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 202.51.247.10 (202.51.247.10) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=0.29900
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<202.214.86.252>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	202.214.86.252
+LIG = lig -b -d -t 3 -c 3 -m 202.214.86.252   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 202.214.86.252 (202.214.86.252) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.19100
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 202.214.86.252 (202.214.86.252) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.02000
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<173.36.254.164>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	173.36.254.164
+LIG = lig -b -d -t 3 -c 3 -m 173.36.254.164   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 173.36.254.164 (173.36.254.164) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.09900
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 173.36.254.164 (173.36.254.164) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=0.10600
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<193.162.145.50>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	193.162.145.50
+LIG = lig -b -d -t 3 -c 3 -m 193.162.145.50   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 193.162.145.50 (193.162.145.50) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.18800
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 193.162.145.50 (193.162.145.50) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=199.119.73.6
+||RTT=0.18800
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<217.8.98.42>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	217.8.98.42
+LIG = lig -b -d -t 3 -c 3 -m 217.8.98.42   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 217.8.98.42 (217.8.98.42) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=96.56.153.211
+|RTT=0.18400
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.98.42 (217.8.98.42) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=199.119.73.6
+||RTT=0.17500
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2001:418:4:c013:beef:caca:0:2>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	2001:418:4:c013:beef:caca:0:2
+LIG = lig -b -d -t 3 -c 3 -m 2001:418:4:c013:beef:caca:0:2   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 199.119.75.48 (199.119.75.48) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<217.8.97.6>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	217.8.97.6
+LIG = lig -b -d -t 3 -c 3 -m 217.8.97.6   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 217.8.97.6 (217.8.97.6) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.18400
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.97.6 (217.8.97.6) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.01600
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<206.223.132.89>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	206.223.132.89
+LIG = lig -b -d -t 3 -c 3 -m 206.223.132.89   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 206.223.132.89 (206.223.132.89) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=96.56.153.211
+|RTT=1.13500
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 206.223.132.89 (206.223.132.89) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.14200
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2001:67c:21b4:110::b>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	2001:67c:21b4:110::b
+LIG = lig -b -d -t 3 -c 3 -m 2001:67c:21b4:110::b   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 199.119.75.48 (199.119.75.48) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<149.20.48.77>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	149.20.48.77
+LIG = lig -b -d -t 3 -c 3 -m 149.20.48.77   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 149.20.48.77 (149.20.48.77) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.09600
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 149.20.48.77 (149.20.48.77) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.01000
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2001:4f8:3:d::61>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	2001:4f8:3:d::61
+LIG = lig -b -d -t 3 -c 3 -m 2001:4f8:3:d::61   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 199.119.75.48 (199.119.75.48) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<198.6.255.37>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	198.6.255.37
+LIG = lig -b -d -t 3 -c 3 -m 198.6.255.37   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 198.6.255.37 (198.6.255.37) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=96.56.153.211
+|RTT=1.12200
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 198.6.255.37 (198.6.255.37) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.12000
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2001:67c:21b4:109::b>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	2001:67c:21b4:109::b
+LIG = lig -b -d -t 3 -c 3 -m 2001:67c:21b4:109::b   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 199.119.75.48 (199.119.75.48) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<217.8.98.46>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	217.8.98.46
+LIG = lig -b -d -t 3 -c 3 -m 217.8.98.46   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 217.8.98.46 (217.8.98.46) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.17600
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.98.46 (217.8.98.46) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.00100
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<149.20.48.61>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	149.20.48.61
+LIG = lig -b -d -t 3 -c 3 -m 149.20.48.61   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 149.20.48.61 (149.20.48.61) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.09500
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 149.20.48.61 (149.20.48.61) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.01500
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<195.50.116.18>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	195.50.116.18
+LIG = lig -b -d -t 3 -c 3 -m 195.50.116.18   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 195.50.116.18 (195.50.116.18) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.15400
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 195.50.116.18 (195.50.116.18) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.02200
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2401:2000:6660::5>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	199.119.75.48
+MR =	2401:2000:6660::5
+LIG = lig -b -d -t 3 -c 3 -m 2401:2000:6660::5   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 199.119.75.48 (199.119.75.48) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2401:2000:6660::5>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	2401:2000:6660::5
+LIG = lig -b -d -t 3 -c 3 -m 2401:2000:6660::5   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 199.119.75.48 (199.119.75.48) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<217.8.97.6>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	217.8.97.6
+LIG = lig -b -d -t 3 -c 3 -m 217.8.97.6   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 217.8.97.6 (217.8.97.6) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.17600
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.97.6 (217.8.97.6) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=199.119.73.6
+||RTT=0.99300
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<206.223.132.89>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	206.223.132.89
+LIG = lig -b -d -t 3 -c 3 -m 206.223.132.89   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 206.223.132.89 (206.223.132.89) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=1.13500
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 206.223.132.89 (206.223.132.89) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=192.162.230.11
+||RTT=0.63600
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=153.16.36.0/24
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=192.162.230.11
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=50
+||LOCATOR_1=192.162.230.12
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2001:67c:21b4:109::b>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	2001:67c:21b4:109::b
+LIG = lig -b -d -t 3 -c 3 -m 2001:67c:21b4:109::b   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 199.119.75.48 (199.119.75.48) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2001:67c:21b4:110::b>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	2001:67c:21b4:110::b
+LIG = lig -b -d -t 3 -c 3 -m 2001:67c:21b4:110::b   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 199.119.75.48 (199.119.75.48) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<193.162.145.50>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	193.162.145.50
+LIG = lig -b -d -t 3 -c 3 -m 193.162.145.50   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 193.162.145.50 (193.162.145.50) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.18800
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 193.162.145.50 (193.162.145.50) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=199.119.73.6
+||RTT=0.19100
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<198.6.255.40>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	198.6.255.40
+LIG = lig -b -d -t 3 -c 3 -m 198.6.255.40   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 198.6.255.40 (198.6.255.40) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=96.56.153.211
+|RTT=1.10300
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 198.6.255.40 (198.6.255.40) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.11200
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<149.20.48.77>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	149.20.48.77
+LIG = lig -b -d -t 3 -c 3 -m 149.20.48.77   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 149.20.48.77 (149.20.48.77) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.09500
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 149.20.48.77 (149.20.48.77) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=199.119.73.6
+||RTT=0.09500
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<217.8.98.46>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	217.8.98.46
+LIG = lig -b -d -t 3 -c 3 -m 217.8.98.46   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 217.8.98.46 (217.8.98.46) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.17700
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.98.46 (217.8.98.46) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=199.119.73.6
+||RTT=0.17900
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<195.50.116.18>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	195.50.116.18
+LIG = lig -b -d -t 3 -c 3 -m 195.50.116.18   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 195.50.116.18 (195.50.116.18) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.15900
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 195.50.116.18 (195.50.116.18) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=199.119.73.6
+||RTT=0.15500
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<202.51.247.10>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	202.51.247.10
+LIG = lig -b -d -t 3 -c 3 -m 202.51.247.10   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 202.51.247.10 (202.51.247.10) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.27500
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 202.51.247.10 (202.51.247.10) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=0.30200
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2001:4f8:3:d::61>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	2001:4f8:3:d::61
+LIG = lig -b -d -t 3 -c 3 -m 2001:4f8:3:d::61   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 199.119.75.48 (199.119.75.48) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<149.20.48.61>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	149.20.48.61
+LIG = lig -b -d -t 3 -c 3 -m 149.20.48.61   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 149.20.48.61 (149.20.48.61) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.10100
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 149.20.48.61 (149.20.48.61) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=199.119.73.6
+||RTT=0.10100
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<173.36.254.164>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	173.36.254.164
+LIG = lig -b -d -t 3 -c 3 -m 173.36.254.164   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 173.36.254.164 (173.36.254.164) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.09900
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 173.36.254.164 (173.36.254.164) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=0.10300
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<217.8.98.42>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	217.8.98.42
+LIG = lig -b -d -t 3 -c 3 -m 217.8.98.42   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 217.8.98.42 (217.8.98.42) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.18900
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.98.42 (217.8.98.42) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=0.18800
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2001:418:4:c013:beef:caca:0:2>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	2001:418:4:c013:beef:caca:0:2
+LIG = lig -b -d -t 3 -c 3 -m 2001:418:4:c013:beef:caca:0:2   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 199.119.75.48 (199.119.75.48) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<202.214.86.252>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	202.214.86.252
+LIG = lig -b -d -t 3 -c 3 -m 202.214.86.252   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 202.214.86.252 (202.214.86.252) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.19100
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 202.214.86.252 (202.214.86.252) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=199.119.73.6
+||RTT=0.99700
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<198.6.255.37>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	198.6.255.37
+LIG = lig -b -d -t 3 -c 3 -m 198.6.255.37   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 198.6.255.37 (198.6.255.37) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=96.56.153.211
+|RTT=1.12900
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 198.6.255.37 (198.6.255.37) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.12600
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2401:2000:6660::5>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	2401:2000:6660::5
+LIG = lig -b -d -t 3 -c 3 -m 2401:2000:6660::5   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 199.119.75.48 (199.119.75.48) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<217.8.97.6>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	217.8.97.6
+LIG = lig -b -d -t 3 -c 3 -m 217.8.97.6   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 217.8.97.6 (217.8.97.6) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.17600
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.97.6 (217.8.97.6) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=199.119.73.6
+||RTT=0.17700
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<206.223.132.89>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	206.223.132.89
+LIG = lig -b -d -t 3 -c 3 -m 206.223.132.89   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 206.223.132.89 (206.223.132.89) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=96.56.153.211
+|RTT=1.01400
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 206.223.132.89 (206.223.132.89) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.13900
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2001:67c:21b4:109::b>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	2001:67c:21b4:109::b
+LIG = lig -b -d -t 3 -c 3 -m 2001:67c:21b4:109::b   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 199.119.75.48 (199.119.75.48) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2001:67c:21b4:110::b>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	2001:67c:21b4:110::b
+LIG = lig -b -d -t 3 -c 3 -m 2001:67c:21b4:110::b   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 199.119.75.48 (199.119.75.48) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<193.162.145.50>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	193.162.145.50
+LIG = lig -b -d -t 3 -c 3 -m 193.162.145.50   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 193.162.145.50 (193.162.145.50) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.18900
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 193.162.145.50 (193.162.145.50) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=199.119.73.6
+||RTT=0.18600
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<198.6.255.40>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	198.6.255.40
+LIG = lig -b -d -t 3 -c 3 -m 198.6.255.40   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 198.6.255.40 (198.6.255.40) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=96.56.153.211
+|RTT=1.01000
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 198.6.255.40 (198.6.255.40) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.13100
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<149.20.48.77>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	149.20.48.77
+LIG = lig -b -d -t 3 -c 3 -m 149.20.48.77   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 149.20.48.77 (149.20.48.77) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.09800
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 149.20.48.77 (149.20.48.77) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=0.99600
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<217.8.98.46>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	217.8.98.46
+LIG = lig -b -d -t 3 -c 3 -m 217.8.98.46   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 217.8.98.46 (217.8.98.46) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.17600
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.98.46 (217.8.98.46) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.00000
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<195.50.116.18>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	195.50.116.18
+LIG = lig -b -d -t 3 -c 3 -m 195.50.116.18   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 195.50.116.18 (195.50.116.18) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.15400
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 195.50.116.18 (195.50.116.18) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.00600
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<202.51.247.10>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	202.51.247.10
+LIG = lig -b -d -t 3 -c 3 -m 202.51.247.10   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 202.51.247.10 (202.51.247.10) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.27500
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 202.51.247.10 (202.51.247.10) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=0.30500
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2001:4f8:3:d::61>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	2001:4f8:3:d::61
+LIG = lig -b -d -t 3 -c 3 -m 2001:4f8:3:d::61   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 199.119.75.48 (199.119.75.48) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<149.20.48.61>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	149.20.48.61
+LIG = lig -b -d -t 3 -c 3 -m 149.20.48.61   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 149.20.48.61 (149.20.48.61) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.09500
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 149.20.48.61 (149.20.48.61) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.02600
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<173.36.254.164>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	173.36.254.164
+LIG = lig -b -d -t 3 -c 3 -m 173.36.254.164   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 173.36.254.164 (173.36.254.164) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.09800
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 173.36.254.164 (173.36.254.164) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=0.10900
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<217.8.98.42>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	217.8.98.42
+LIG = lig -b -d -t 3 -c 3 -m 217.8.98.42   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 217.8.98.42 (217.8.98.42) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=96.56.153.211
+|RTT=0.18200
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.98.42 (217.8.98.42) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=199.119.73.6
+||RTT=0.18300
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<2001:418:4:c013:beef:caca:0:2>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	2001:418:4:c013:beef:caca:0:2
+LIG = lig -b -d -t 3 -c 3 -m 2001:418:4:c013:beef:caca:0:2   199.119.75.48
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 199.119.75.48 (199.119.75.48) ...
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 199.119.75.48 (199.119.75.48) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<202.214.86.252>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	202.214.86.252
+LIG = lig -b -d -t 3 -c 3 -m 202.214.86.252   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 202.214.86.252 (202.214.86.252) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=199.119.73.6
+|RTT=0.19100
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 202.214.86.252 (202.214.86.252) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=0.99500
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<199.119.75.48>---MR-<198.6.255.37>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	199.119.75.48
+MR =	198.6.255.37
+LIG = lig -b -d -t 3 -c 3 -m 198.6.255.37   199.119.75.48
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 198.6.255.37 (198.6.255.37) for 199.119.75.48 (199.119.75.48) ...
+|RECEIVED_FROM=96.56.153.211
+|RTT=1.14700
+|LOCATOR_COUNT=1
+|MAPPING_ENTRY=199.119.75.48/32
+|TTL=1440
+|AUTH=0
+|MOBILE=0
+|LOCATOR_0=65.43.251.49
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=100
+|LOCATOR_0_WEIGHT=50
+|
+||LIG = lig -b -d -t 3 -c 3  -m 65.43.251.49  199.119.75.48
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 198.6.255.37 (198.6.255.37) for 199.119.75.48 (199.119.75.48) ...
+||RECEIVED_FROM=96.56.153.211
+||RTT=1.13500
+||LOCATOR_COUNT=1
+||MAPPING_ENTRY=199.119.75.48/32
+||TTL=1440
+||AUTH=0
+||MOBILE=0
+||LOCATOR_0=65.43.251.49
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=100
+||LOCATOR_0_WEIGHT=50
+||
+
+--------------------------------------------------------------->

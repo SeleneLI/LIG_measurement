@@ -1,0 +1,342 @@
+
+---RoundID-<1383778218>---HOST-<dhcp-9c46.meeting.ietf.org>---EID-<85.184.188.0>---MR-<193.162.145.50>--->
+Host =	dhcp-9c46.meeting.ietf.org
+Date =	6.11.2013
+Time =	22:50:18
+EID =	85.184.188.0
+MR =	193.162.145.50
+LIG = lig -b -d -t 3 -c 3 -m 193.162.145.50   85.184.188.0
+|Using source address (ITR-RLOC) 31.133.156.70
+|Send map-request to 193.162.145.50 (193.162.145.50) for 85.184.188.0 (85.184.188.0) ...
+|Send map-request to 193.162.145.50 (193.162.145.50) for 85.184.188.0 (85.184.188.0) ...
+|Send map-request to 193.162.145.50 (193.162.145.50) for 85.184.188.0 (85.184.188.0) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383778218>---HOST-<dhcp-9c46.meeting.ietf.org>---EID-<85.184.188.0>---MR-<2001:418:4:c013:beef:caca:0:2>--->
+Host =	dhcp-9c46.meeting.ietf.org
+Date =	6.11.2013
+Time =	22:50:18
+EID =	85.184.188.0
+MR =	2001:418:4:c013:beef:caca:0:2
+LIG = lig -b -d -t 3 -c 3 -m 2001:418:4:c013:beef:caca:0:2   85.184.188.0
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 85.184.188.0 (85.184.188.0) ...
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 85.184.188.0 (85.184.188.0) ...
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 85.184.188.0 (85.184.188.0) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383778218>---HOST-<dhcp-9c46.meeting.ietf.org>---EID-<85.184.188.0>---MR-<206.223.132.89>--->
+Host =	dhcp-9c46.meeting.ietf.org
+Date =	6.11.2013
+Time =	22:50:18
+EID =	85.184.188.0
+MR =	206.223.132.89
+LIG = lig -b -d -t 3 -c 3 -m 206.223.132.89   85.184.188.0
+|Using source address (ITR-RLOC) 31.133.156.70
+|Send map-request to 206.223.132.89 (206.223.132.89) for 85.184.188.0 (85.184.188.0) ...
+|RECEIVED_FROM=206.223.132.89
+|RTT=0.30000
+|LOCATOR_COUNT=0
+|MAPPING_ENTRY=85.184.188.0/22
+|TTL=15
+|AUTH=0
+|MOBILE=0
+|RESULT="Negative cache entry"
+|ACTION=forward-native
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383778218>---HOST-<dhcp-9c46.meeting.ietf.org>---EID-<85.184.188.0>---MR-<149.20.48.77>--->
+Host =	dhcp-9c46.meeting.ietf.org
+Date =	6.11.2013
+Time =	22:50:18
+EID =	85.184.188.0
+MR =	149.20.48.77
+LIG = lig -b -d -t 3 -c 3 -m 149.20.48.77   85.184.188.0
+|Using source address (ITR-RLOC) 31.133.156.70
+|Send map-request to 149.20.48.77 (149.20.48.77) for 85.184.188.0 (85.184.188.0) ...
+|RECEIVED_FROM=149.20.48.77
+|RTT=0.18000
+|LOCATOR_COUNT=0
+|MAPPING_ENTRY=85.184.188.0/22
+|TTL=15
+|AUTH=0
+|MOBILE=0
+|RESULT="Negative cache entry"
+|ACTION=forward-native
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383778218>---HOST-<dhcp-9c46.meeting.ietf.org>---EID-<85.184.188.0>---MR-<198.6.255.37>--->
+Host =	dhcp-9c46.meeting.ietf.org
+Date =	6.11.2013
+Time =	22:50:18
+EID =	85.184.188.0
+MR =	198.6.255.37
+LIG = lig -b -d -t 3 -c 3 -m 198.6.255.37   85.184.188.0
+|Using source address (ITR-RLOC) 31.133.156.70
+|Send map-request to 198.6.255.37 (198.6.255.37) for 85.184.188.0 (85.184.188.0) ...
+|RECEIVED_FROM=198.32.7.67
+|RTT=0.20400
+|LOCATOR_COUNT=0
+|MAPPING_ENTRY=85.184.188.0/22
+|TTL=15
+|AUTH=0
+|MOBILE=0
+|RESULT="Negative cache entry"
+|ACTION=forward-native
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383778218>---HOST-<dhcp-9c46.meeting.ietf.org>---EID-<85.184.188.0>---MR-<2401:2000:6660::5>--->
+Host =	dhcp-9c46.meeting.ietf.org
+Date =	6.11.2013
+Time =	22:50:18
+EID =	85.184.188.0
+MR =	2401:2000:6660::5
+LIG = lig -b -d -t 3 -c 3 -m 2401:2000:6660::5   85.184.188.0
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 85.184.188.0 (85.184.188.0) ...
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 85.184.188.0 (85.184.188.0) ...
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 85.184.188.0 (85.184.188.0) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383778218>---HOST-<dhcp-9c46.meeting.ietf.org>---EID-<85.184.188.0>---MR-<217.8.98.46>--->
+Host =	dhcp-9c46.meeting.ietf.org
+Date =	6.11.2013
+Time =	22:50:18
+EID =	85.184.188.0
+MR =	217.8.98.46
+LIG = lig -b -d -t 3 -c 3 -m 217.8.98.46   85.184.188.0
+|Using source address (ITR-RLOC) 31.133.156.70
+|Send map-request to 217.8.98.46 (217.8.98.46) for 85.184.188.0 (85.184.188.0) ...
+|Send map-request to 217.8.98.46 (217.8.98.46) for 85.184.188.0 (85.184.188.0) ...
+|Send map-request to 217.8.98.46 (217.8.98.46) for 85.184.188.0 (85.184.188.0) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383778218>---HOST-<dhcp-9c46.meeting.ietf.org>---EID-<85.184.188.0>---MR-<2001:4f8:3:d::61>--->
+Host =	dhcp-9c46.meeting.ietf.org
+Date =	6.11.2013
+Time =	22:50:18
+EID =	85.184.188.0
+MR =	2001:4f8:3:d::61
+LIG = lig -b -d -t 3 -c 3 -m 2001:4f8:3:d::61   85.184.188.0
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 85.184.188.0 (85.184.188.0) ...
+|RECEIVED_FROM=2001:4f8:3:d::61
+|RTT=0.22300
+|LOCATOR_COUNT=0
+|MAPPING_ENTRY=85.184.188.0/22
+|TTL=15
+|AUTH=0
+|MOBILE=0
+|RESULT="Negative cache entry"
+|ACTION=forward-native
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383778218>---HOST-<dhcp-9c46.meeting.ietf.org>---EID-<85.184.188.0>---MR-<149.20.48.61>--->
+Host =	dhcp-9c46.meeting.ietf.org
+Date =	6.11.2013
+Time =	22:50:18
+EID =	85.184.188.0
+MR =	149.20.48.61
+LIG = lig -b -d -t 3 -c 3 -m 149.20.48.61   85.184.188.0
+|Using source address (ITR-RLOC) 31.133.156.70
+|Send map-request to 149.20.48.61 (149.20.48.61) for 85.184.188.0 (85.184.188.0) ...
+|RECEIVED_FROM=149.20.48.61
+|RTT=0.02800
+|LOCATOR_COUNT=0
+|MAPPING_ENTRY=85.184.188.0/22
+|TTL=16
+|AUTH=0
+|MOBILE=0
+|RESULT="Negative cache entry"
+|ACTION=forward-native
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383778218>---HOST-<dhcp-9c46.meeting.ietf.org>---EID-<85.184.188.0>---MR-<217.8.98.42>--->
+Host =	dhcp-9c46.meeting.ietf.org
+Date =	6.11.2013
+Time =	22:50:18
+EID =	85.184.188.0
+MR =	217.8.98.42
+LIG = lig -b -d -t 3 -c 3 -m 217.8.98.42   85.184.188.0
+|Using source address (ITR-RLOC) 31.133.156.70
+|Send map-request to 217.8.98.42 (217.8.98.42) for 85.184.188.0 (85.184.188.0) ...
+|Send map-request to 217.8.98.42 (217.8.98.42) for 85.184.188.0 (85.184.188.0) ...
+|Send map-request to 217.8.98.42 (217.8.98.42) for 85.184.188.0 (85.184.188.0) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383778218>---HOST-<dhcp-9c46.meeting.ietf.org>---EID-<85.184.188.0>---MR-<202.51.247.10>--->
+Host =	dhcp-9c46.meeting.ietf.org
+Date =	6.11.2013
+Time =	22:50:18
+EID =	85.184.188.0
+MR =	202.51.247.10
+LIG = lig -b -d -t 3 -c 3 -m 202.51.247.10   85.184.188.0
+|Using source address (ITR-RLOC) 31.133.156.70
+|Send map-request to 202.51.247.10 (202.51.247.10) for 85.184.188.0 (85.184.188.0) ...
+|Send map-request to 202.51.247.10 (202.51.247.10) for 85.184.188.0 (85.184.188.0) ...
+|Send map-request to 202.51.247.10 (202.51.247.10) for 85.184.188.0 (85.184.188.0) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383778218>---HOST-<dhcp-9c46.meeting.ietf.org>---EID-<85.184.188.0>---MR-<195.50.116.18>--->
+Host =	dhcp-9c46.meeting.ietf.org
+Date =	6.11.2013
+Time =	22:50:18
+EID =	85.184.188.0
+MR =	195.50.116.18
+LIG = lig -b -d -t 3 -c 3 -m 195.50.116.18   85.184.188.0
+|Using source address (ITR-RLOC) 31.133.156.70
+|Send map-request to 195.50.116.18 (195.50.116.18) for 85.184.188.0 (85.184.188.0) ...
+|RECEIVED_FROM=69.58.178.133
+|RTT=0.11200
+|LOCATOR_COUNT=0
+|MAPPING_ENTRY=217.30.94.0/23
+|TTL=15
+|AUTH=0
+|MOBILE=0
+|RESULT="Negative cache entry"
+|ACTION=forward-native
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383778218>---HOST-<dhcp-9c46.meeting.ietf.org>---EID-<85.184.188.0>---MR-<2001:67c:21b4:109::b>--->
+Host =	dhcp-9c46.meeting.ietf.org
+Date =	6.11.2013
+Time =	22:50:18
+EID =	85.184.188.0
+MR =	2001:67c:21b4:109::b
+LIG = lig -b -d -t 3 -c 3 -m 2001:67c:21b4:109::b   85.184.188.0
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 85.184.188.0 (85.184.188.0) ...
+|Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 85.184.188.0 (85.184.188.0) ...
+|Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 85.184.188.0 (85.184.188.0) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383778218>---HOST-<dhcp-9c46.meeting.ietf.org>---EID-<85.184.188.0>---MR-<198.6.255.40>--->
+Host =	dhcp-9c46.meeting.ietf.org
+Date =	6.11.2013
+Time =	22:50:18
+EID =	85.184.188.0
+MR =	198.6.255.40
+LIG = lig -b -d -t 3 -c 3 -m 198.6.255.40   85.184.188.0
+|Using source address (ITR-RLOC) 31.133.156.70
+|Send map-request to 198.6.255.40 (198.6.255.40) for 85.184.188.0 (85.184.188.0) ...
+|RECEIVED_FROM=192.124.101.79
+|RTT=0.20000
+|LOCATOR_COUNT=0
+|MAPPING_ENTRY=85.184.188.0/22
+|TTL=15
+|AUTH=0
+|MOBILE=0
+|RESULT="Negative cache entry"
+|ACTION=forward-native
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383778218>---HOST-<dhcp-9c46.meeting.ietf.org>---EID-<85.184.188.0>---MR-<217.8.97.6>--->
+Host =	dhcp-9c46.meeting.ietf.org
+Date =	6.11.2013
+Time =	22:50:18
+EID =	85.184.188.0
+MR =	217.8.97.6
+LIG = lig -b -d -t 3 -c 3 -m 217.8.97.6   85.184.188.0
+|Using source address (ITR-RLOC) 31.133.156.70
+|Send map-request to 217.8.97.6 (217.8.97.6) for 85.184.188.0 (85.184.188.0) ...
+|RECEIVED_FROM=217.8.97.6
+|RTT=0.17500
+|LOCATOR_COUNT=0
+|MAPPING_ENTRY=85.184.188.0/22
+|TTL=15
+|AUTH=0
+|MOBILE=0
+|RESULT="Negative cache entry"
+|ACTION=forward-native
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383778218>---HOST-<dhcp-9c46.meeting.ietf.org>---EID-<85.184.188.0>---MR-<173.36.254.164>--->
+Host =	dhcp-9c46.meeting.ietf.org
+Date =	6.11.2013
+Time =	22:50:18
+EID =	85.184.188.0
+MR =	173.36.254.164
+LIG = lig -b -d -t 3 -c 3 -m 173.36.254.164   85.184.188.0
+|Using source address (ITR-RLOC) 31.133.156.70
+|Send map-request to 173.36.254.164 (173.36.254.164) for 85.184.188.0 (85.184.188.0) ...
+|Send map-request to 173.36.254.164 (173.36.254.164) for 85.184.188.0 (85.184.188.0) ...
+|Send map-request to 173.36.254.164 (173.36.254.164) for 85.184.188.0 (85.184.188.0) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383778218>---HOST-<dhcp-9c46.meeting.ietf.org>---EID-<85.184.188.0>---MR-<202.214.86.252>--->
+Host =	dhcp-9c46.meeting.ietf.org
+Date =	6.11.2013
+Time =	22:50:18
+EID =	85.184.188.0
+MR =	202.214.86.252
+LIG = lig -b -d -t 3 -c 3 -m 202.214.86.252   85.184.188.0
+|Using source address (ITR-RLOC) 31.133.156.70
+|Send map-request to 202.214.86.252 (202.214.86.252) for 85.184.188.0 (85.184.188.0) ...
+|RECEIVED_FROM=202.214.86.252
+|RTT=0.38200
+|LOCATOR_COUNT=0
+|MAPPING_ENTRY=85.184.188.0/22
+|TTL=15
+|AUTH=0
+|MOBILE=0
+|RESULT="Negative cache entry"
+|ACTION=forward-native
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383778218>---HOST-<dhcp-9c46.meeting.ietf.org>---EID-<85.184.188.0>---MR-<2001:67c:21b4:110::b>--->
+Host =	dhcp-9c46.meeting.ietf.org
+Date =	6.11.2013
+Time =	22:50:18
+EID =	85.184.188.0
+MR =	2001:67c:21b4:110::b
+LIG = lig -b -d -t 3 -c 3 -m 2001:67c:21b4:110::b   85.184.188.0
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 85.184.188.0 (85.184.188.0) ...
+|Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 85.184.188.0 (85.184.188.0) ...
+|Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 85.184.188.0 (85.184.188.0) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->

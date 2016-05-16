@@ -1,0 +1,2177 @@
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<198.6.255.40>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	2610:d0:112a::
+MR =	198.6.255.40
+LIG = lig -b -d -t 3 -c 3 -m 198.6.255.40   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 198.6.255.40 (198.6.255.40) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.26700
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 198.6.255.40 (198.6.255.40) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.17300
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 198.6.255.40 (198.6.255.40) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.17400
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<202.51.247.10>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	2610:d0:112a::
+MR =	202.51.247.10
+LIG = lig -b -d -t 3 -c 3 -m 202.51.247.10   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 202.51.247.10 (202.51.247.10) for 2610:d0:112a:: (2610:d0:112a::) ...
+|Send map-request to 202.51.247.10 (202.51.247.10) for 2610:d0:112a:: (2610:d0:112a::) ...
+|Ex BugRECEIVED_FROM=71.206.170.32
+|RTT=0.54400
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 202.51.247.10 (202.51.247.10) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.30900
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 202.51.247.10 (202.51.247.10) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.28800
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<202.214.86.252>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	2610:d0:112a::
+MR =	202.214.86.252
+LIG = lig -b -d -t 3 -c 3 -m 202.214.86.252   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 202.214.86.252 (202.214.86.252) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.49000
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 202.214.86.252 (202.214.86.252) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.20400
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 202.214.86.252 (202.214.86.252) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.19700
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<173.36.254.164>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	2610:d0:112a::
+MR =	173.36.254.164
+LIG = lig -b -d -t 3 -c 3 -m 173.36.254.164   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 173.36.254.164 (173.36.254.164) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.10800
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 173.36.254.164 (173.36.254.164) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.10800
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 173.36.254.164 (173.36.254.164) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.11400
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<193.162.145.50>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	2610:d0:112a::
+MR =	193.162.145.50
+LIG = lig -b -d -t 3 -c 3 -m 193.162.145.50   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 193.162.145.50 (193.162.145.50) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.43500
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 193.162.145.50 (193.162.145.50) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.45900
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 193.162.145.50 (193.162.145.50) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.26800
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<217.8.98.42>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	2610:d0:112a::
+MR =	217.8.98.42
+LIG = lig -b -d -t 3 -c 3 -m 217.8.98.42   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 217.8.98.42 (217.8.98.42) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.40100
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.98.42 (217.8.98.42) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.45400
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.98.42 (217.8.98.42) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.30100
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<2001:418:4:c013:beef:caca:0:2>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	2610:d0:112a::
+MR =	2001:418:4:c013:beef:caca:0:2
+LIG = lig -b -d -t 3 -c 3 -m 2001:418:4:c013:beef:caca:0:2   2610:d0:112a::
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 2610:d0:112a:: (2610:d0:112a::) ...
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 2610:d0:112a:: (2610:d0:112a::) ...
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 2610:d0:112a:: (2610:d0:112a::) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<217.8.97.6>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	2610:d0:112a::
+MR =	217.8.97.6
+LIG = lig -b -d -t 3 -c 3 -m 217.8.97.6   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 217.8.97.6 (217.8.97.6) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.56100
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.97.6 (217.8.97.6) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.29200
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.97.6 (217.8.97.6) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.28800
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<206.223.132.89>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	2610:d0:112a::
+MR =	206.223.132.89
+LIG = lig -b -d -t 3 -c 3 -m 206.223.132.89   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 206.223.132.89 (206.223.132.89) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.13200
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 206.223.132.89 (206.223.132.89) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.13300
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 206.223.132.89 (206.223.132.89) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.12200
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<2001:67c:21b4:110::b>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	2610:d0:112a::
+MR =	2001:67c:21b4:110::b
+LIG = lig -b -d -t 3 -c 3 -m 2001:67c:21b4:110::b   2610:d0:112a::
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|RTT=0.42200
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+||Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||RTT=0.46300
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+||Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||RTT=0.32300
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<149.20.48.77>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	2610:d0:112a::
+MR =	149.20.48.77
+LIG = lig -b -d -t 3 -c 3 -m 149.20.48.77   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 149.20.48.77 (149.20.48.77) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.24900
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 149.20.48.77 (149.20.48.77) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.15700
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 149.20.48.77 (149.20.48.77) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.15800
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<2001:4f8:3:d::61>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	2610:d0:112a::
+MR =	2001:4f8:3:d::61
+LIG = lig -b -d -t 3 -c 3 -m 2001:4f8:3:d::61   2610:d0:112a::
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|RTT=0.25700
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+||Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||RTT=0.16700
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+||Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||RTT=0.16500
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<198.6.255.37>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	2610:d0:112a::
+MR =	198.6.255.37
+LIG = lig -b -d -t 3 -c 3 -m 198.6.255.37   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 198.6.255.37 (198.6.255.37) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.26500
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 198.6.255.37 (198.6.255.37) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.17600
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 198.6.255.37 (198.6.255.37) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.17900
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<2001:67c:21b4:109::b>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	2610:d0:112a::
+MR =	2001:67c:21b4:109::b
+LIG = lig -b -d -t 3 -c 3 -m 2001:67c:21b4:109::b   2610:d0:112a::
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|RTT=0.29000
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+||Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||RTT=0.30000
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+||Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||RTT=0.29300
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<217.8.98.46>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	2610:d0:112a::
+MR =	217.8.98.46
+LIG = lig -b -d -t 3 -c 3 -m 217.8.98.46   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 217.8.98.46 (217.8.98.46) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.29000
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.98.46 (217.8.98.46) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.30700
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.98.46 (217.8.98.46) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.30100
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<149.20.48.61>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	2610:d0:112a::
+MR =	149.20.48.61
+LIG = lig -b -d -t 3 -c 3 -m 149.20.48.61   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 149.20.48.61 (149.20.48.61) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.16400
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 149.20.48.61 (149.20.48.61) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.15600
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 149.20.48.61 (149.20.48.61) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.16300
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<195.50.116.18>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	2610:d0:112a::
+MR =	195.50.116.18
+LIG = lig -b -d -t 3 -c 3 -m 195.50.116.18   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 195.50.116.18 (195.50.116.18) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.46800
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 195.50.116.18 (195.50.116.18) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.25600
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 195.50.116.18 (195.50.116.18) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.24300
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383869468>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<2401:2000:6660::5>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	0:11:8
+EID =	2610:d0:112a::
+MR =	2401:2000:6660::5
+LIG = lig -b -d -t 3 -c 3 -m 2401:2000:6660::5   2610:d0:112a::
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 2610:d0:112a:: (2610:d0:112a::) ...
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 2610:d0:112a:: (2610:d0:112a::) ...
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 2610:d0:112a:: (2610:d0:112a::) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<2401:2000:6660::5>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	2610:d0:112a::
+MR =	2401:2000:6660::5
+LIG = lig -b -d -t 3 -c 3 -m 2401:2000:6660::5   2610:d0:112a::
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 2610:d0:112a:: (2610:d0:112a::) ...
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 2610:d0:112a:: (2610:d0:112a::) ...
+|Send map-request to 2401:2000:6660::5 (2401:2000:6660::5) for 2610:d0:112a:: (2610:d0:112a::) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<217.8.97.6>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	2610:d0:112a::
+MR =	217.8.97.6
+LIG = lig -b -d -t 3 -c 3 -m 217.8.97.6   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 217.8.97.6 (217.8.97.6) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.55400
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.97.6 (217.8.97.6) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.29200
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.97.6 (217.8.97.6) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.29100
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<206.223.132.89>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	2610:d0:112a::
+MR =	206.223.132.89
+LIG = lig -b -d -t 3 -c 3 -m 206.223.132.89   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 206.223.132.89 (206.223.132.89) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.12000
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 206.223.132.89 (206.223.132.89) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.12100
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 206.223.132.89 (206.223.132.89) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.12400
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<2001:67c:21b4:109::b>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	2610:d0:112a::
+MR =	2001:67c:21b4:109::b
+LIG = lig -b -d -t 3 -c 3 -m 2001:67c:21b4:109::b   2610:d0:112a::
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|RTT=0.39000
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+||Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||RTT=0.45100
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+||Send map-request to 2001:67c:21b4:109::b (2001:67c:21b4:109::b) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||RTT=0.29500
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<2001:67c:21b4:110::b>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	2610:d0:112a::
+MR =	2001:67c:21b4:110::b
+LIG = lig -b -d -t 3 -c 3 -m 2001:67c:21b4:110::b   2610:d0:112a::
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|RTT=0.40800
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+||Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||RTT=0.45400
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+||Send map-request to 2001:67c:21b4:110::b (2001:67c:21b4:110::b) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||RTT=0.29800
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<193.162.145.50>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	2610:d0:112a::
+MR =	193.162.145.50
+LIG = lig -b -d -t 3 -c 3 -m 193.162.145.50   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 193.162.145.50 (193.162.145.50) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.43100
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 193.162.145.50 (193.162.145.50) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.43700
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 193.162.145.50 (193.162.145.50) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.30900
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<198.6.255.40>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	2610:d0:112a::
+MR =	198.6.255.40
+LIG = lig -b -d -t 3 -c 3 -m 198.6.255.40   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 198.6.255.40 (198.6.255.40) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.26900
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 198.6.255.40 (198.6.255.40) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.17600
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 198.6.255.40 (198.6.255.40) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.17400
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<149.20.48.77>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	2610:d0:112a::
+MR =	149.20.48.77
+LIG = lig -b -d -t 3 -c 3 -m 149.20.48.77   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 149.20.48.77 (149.20.48.77) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.24600
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 149.20.48.77 (149.20.48.77) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.15600
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 149.20.48.77 (149.20.48.77) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.15700
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<217.8.98.46>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	2610:d0:112a::
+MR =	217.8.98.46
+LIG = lig -b -d -t 3 -c 3 -m 217.8.98.46   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 217.8.98.46 (217.8.98.46) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.28900
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.98.46 (217.8.98.46) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.29700
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.98.46 (217.8.98.46) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.28700
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<195.50.116.18>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	2610:d0:112a::
+MR =	195.50.116.18
+LIG = lig -b -d -t 3 -c 3 -m 195.50.116.18   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 195.50.116.18 (195.50.116.18) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.47500
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 195.50.116.18 (195.50.116.18) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.24900
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 195.50.116.18 (195.50.116.18) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.23800
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<202.51.247.10>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	2610:d0:112a::
+MR =	202.51.247.10
+LIG = lig -b -d -t 3 -c 3 -m 202.51.247.10   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 202.51.247.10 (202.51.247.10) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.56200
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 202.51.247.10 (202.51.247.10) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.54200
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 202.51.247.10 (202.51.247.10) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.29300
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<2001:4f8:3:d::61>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	2610:d0:112a::
+MR =	2001:4f8:3:d::61
+LIG = lig -b -d -t 3 -c 3 -m 2001:4f8:3:d::61   2610:d0:112a::
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|RTT=0.24400
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+||Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||RTT=0.16200
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+||Send map-request to 2001:4f8:3:d::61 (2001:4f8:3:d::61) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||RTT=0.16000
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<149.20.48.61>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	2610:d0:112a::
+MR =	149.20.48.61
+LIG = lig -b -d -t 3 -c 3 -m 149.20.48.61   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 149.20.48.61 (149.20.48.61) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.16500
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 149.20.48.61 (149.20.48.61) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.16500
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 149.20.48.61 (149.20.48.61) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.15700
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<173.36.254.164>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	2610:d0:112a::
+MR =	173.36.254.164
+LIG = lig -b -d -t 3 -c 3 -m 173.36.254.164   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 173.36.254.164 (173.36.254.164) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.11700
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 173.36.254.164 (173.36.254.164) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.10900
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 173.36.254.164 (173.36.254.164) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.10900
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<217.8.98.42>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	2610:d0:112a::
+MR =	217.8.98.42
+LIG = lig -b -d -t 3 -c 3 -m 217.8.98.42   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 217.8.98.42 (217.8.98.42) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.28500
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.98.42 (217.8.98.42) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.28800
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 217.8.98.42 (217.8.98.42) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.28600
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<2001:418:4:c013:beef:caca:0:2>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	2610:d0:112a::
+MR =	2001:418:4:c013:beef:caca:0:2
+LIG = lig -b -d -t 3 -c 3 -m 2001:418:4:c013:beef:caca:0:2   2610:d0:112a::
+|Using source address (ITR-RLOC) 2001:67c:370:152:62c5:47ff:fe97:4d38
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 2610:d0:112a:: (2610:d0:112a::) ...
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 2610:d0:112a:: (2610:d0:112a::) ...
+|Send map-request to 2001:418:4:c013:beef:caca:0:2 (2001:418:4:c013:beef:caca::2) for 2610:d0:112a:: (2610:d0:112a::) ...
+|*** No map-reply received ***
+|
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<202.214.86.252>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	2610:d0:112a::
+MR =	202.214.86.252
+LIG = lig -b -d -t 3 -c 3 -m 202.214.86.252   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 202.214.86.252 (202.214.86.252) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.49000
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 202.214.86.252 (202.214.86.252) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.19800
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 202.214.86.252 (202.214.86.252) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.19500
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
+
+---RoundID-<1383930290>---HOST-<dhcp-98af.meeting.ietf.org>---EID-<2610:d0:112a::>---MR-<198.6.255.37>--->
+Host =	dhcp-98af.meeting.ietf.org
+Date =	8.11.2013
+Time =	17:4:50
+EID =	2610:d0:112a::
+MR =	198.6.255.37
+LIG = lig -b -d -t 3 -c 3 -m 198.6.255.37   2610:d0:112a::
+|Using source address (ITR-RLOC) 31.133.152.175
+|Send map-request to 198.6.255.37 (198.6.255.37) for 2610:d0:112a:: (2610:d0:112a::) ...
+|RECEIVED_FROM=71.206.170.32
+|RTT=0.26000
+|LOCATOR_COUNT=2
+|MAPPING_ENTRY=2610:d0:112a::/48
+|TTL=1440
+|AUTH=1
+|MOBILE=0
+|LOCATOR_0=71.206.170.32
+|LOCATOR_0_STATE=up
+|LOCATOR_0_PRIORITY=1
+|LOCATOR_0_WEIGHT=100
+||LIG = lig -b -d -t 3 -c 3 -m 71.206.170.32  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 198.6.255.37 (198.6.255.37) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.19400
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+|LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+|LOCATOR_1_STATE=up
+|LOCATOR_1_PRIORITY=1
+|LOCATOR_1_WEIGHT=100
+|
+||LIG = lig -b -d -t 3 -c 3  -m 2001:558:6036:8:589a:df8a:ab1e:a6b1  2610:d0:112a::
+||Using source address (ITR-RLOC) 31.133.152.175
+||Send map-request to 198.6.255.37 (198.6.255.37) for 2610:d0:112a:: (2610:d0:112a::) ...
+||RECEIVED_FROM=71.206.170.32
+||RTT=0.17800
+||LOCATOR_COUNT=2
+||MAPPING_ENTRY=2610:d0:112a::/48
+||TTL=1440
+||AUTH=1
+||MOBILE=0
+||LOCATOR_0=71.206.170.32
+||LOCATOR_0_STATE=up
+||LOCATOR_0_PRIORITY=1
+||LOCATOR_0_WEIGHT=100
+||LOCATOR_1=2001:558:6036:8:589a:df8a:ab1e:a6b1
+||LOCATOR_1_STATE=up
+||LOCATOR_1_PRIORITY=1
+||LOCATOR_1_WEIGHT=100
+||
+
+--------------------------------------------------------------->
