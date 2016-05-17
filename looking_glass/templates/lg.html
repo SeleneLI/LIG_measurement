@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>LISP Looking Glass</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/lg.css')}}"/>
+</head>
+
+<body>
+     <!-- Container -->
+    <div class="container">
+         <!-- Header -->
+        <header class="header nohighlight" id="overview">
+            <div class="row">
+                <div class="span12">
+                    <h1 id="title">LISP Looking Glass</h1>
+                </div>
+            </div>
+        </header>
+
+        <!-- Network Tests -->
+        <section id="tests">
+            <div class="row">
+                <div class="span12">
+                    <form class="well form-inline" id="networktest" action="" method="post">
+                        <fieldset>
+                            <span id="legend">Resolve Mapping</span>
+                            <div id="hosterror" class="control-group">
+                                <div class="controls">
+                                    <input id="eid" name="eid" type="text" class="input-large" placeholder="Destination EID" value="{{eid}}">
+                                </div>
+                            </div>
+                            <select name="ms" class="input-medium" style="margin-left: 5px;">
+                                <option value="apnic-mr-ms.rloc.lisp4.net">APNIC (JP)</option>
+                                <option value="asp-mr-ms.rloc.lisp4.net">Andrew Partan (US)</option>
+                                <option value="cisco-sjc-mr-ms-1.rloc.lisp4.net">Cisco, San Jose (US)</option>
+                                <option value="eqx-ash-mr-ms.rloc.lisp4.net">Equinix (US)</option>
+                                <option selected value="intouch-ams-mr-ms-1.rloc.lisp4.net">InTouch 1 (NL)</option>
+                                <option value="intouch-ams-mr-ms-2.rloc.lisp4.net">InTouch 2 (NL)</option>
+                                <option value="isc-mr-ms.rloc.lisp4.net">ISC (US)</option>
+                                <option value="l3-london-mr-ms.rloc.lisp4.net">Level 3, London (UK)</option>
+                                <option value="tdc-mr-ms.rloc.lisp4.net">Tele Danmark (DK)</option>
+                            </select>
+                            <button type="submit" id="submit" name="submit" class="btn btn-primary" style="margin-left: 10px;">Resolve !</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        {% if output != "" %}
+            <!-- Results -->
+            <section id="results">
+                <div class="row">
+                    <div class="span12">
+                        <div class="well">
+                            <span id="legend">Results</span>
+                            <pre id="response">{{output}}</pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {% endif %}
+        
+    </div><!-- /container -->
+</body>
+
+</html>

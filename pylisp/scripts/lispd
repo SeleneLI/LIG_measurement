@@ -1,0 +1,346 @@
+#!/usr/bin/env python
+# encoding: utf-8
+"""
+LISPd manages all LISP control packets sent and received by
+a system. By default it listens on UDP port 4342, dispatches
+incoming requests to the configurable modules and can send
+requests to other systems on behalf of other applications.
+"""
+
+from argparse import ArgumentParser, RawDescriptionHelpFormatter
+from pylisp.application.lispd import settings
+from pylisp.application.lispd.message_handler import handle_message
+from pylisp.application.lispd.received_message import ReceivedMessage
+from pylisp.application.lispd.send_message import send_message
+from pylisp.application.lispd.settings import ConfigurationError
+from pylisp.packet.ip.ipv4 import IPv4Packet
+from pylisp.packet.ip.ipv6 import IPv6Packet
+from pylisp.packet.ip.udp import UDPMessage
+from pylisp.packet.lisp.control import ControlMessage
+from pylisp.packet.lisp.data import DataPacket
+from pylisp.utils import auto_addresses
+from pylisp.utils.auto_socket import AutoUDPSocket
+import fcntl
+import logging
+import os
+import select
+import signal
+import socket
+import sys
+
+
+try:
+    import nfqueue  # @UnresolvedImport
+except ImportError:
+    nfqueue = None
+
+
+logger = logging.root
+
+
+def handle_signal(sig, fd, func=lambda x, y: False):
+    """
+    Borrowed from http://www.pocketnix.org/doc/Fighting_set__wakeup__fd/
+
+    Automatically send the signal number down a pipe when a signal occurs
+
+    This function will automatically change the write end to non blocking mode
+    and set up the signal handler for you
+
+    If your signal handler (optionally passed in as func) returns True then the
+    write to the pipe will be suppressed
+    """
+    flags = fcntl.fcntl(fd, fcntl.F_GETFL, 0)
+    flags = flags | os.O_NONBLOCK
+    flags = fcntl.fcntl(fd, fcntl.F_SETFL, flags)
+
+    def signalfd_handler(signal, frame):
+        """
+        Defined inside handle_signal
+        """
+        val = func(signal, frame)
+        if not val:
+            os.write(fd, chr(signal))
+
+    signal.signal(sig, signalfd_handler)
+
+
+def create_sockets(config):
+    control_plane_sockets = []
+    data_plane_sockets = []
+    for address in config.LISTEN_ON:
+        if config.PROCESS_DATA:
+            # Socket on lisp-data port
+            data_plane_sockets.append(AutoUDPSocket(address, 4341))
+
+        # Socket on lisp-control port
+        control_plane_sockets.append(AutoUDPSocket(address, 4342))
+
+    return control_plane_sockets, data_plane_sockets
+
+
+class nfqueue_callback:
+    def __init__(self, config, data_plane_sockets):
+        self.config = config
+        self.sockets = data_plane_sockets
+
+    def __call__(self, payload):
+        # Always drop the packet, we'll send a new one
+        payload.set_verdict(nfqueue.NF_DROP)
+
+        if not settings.config.PETR:
+            logger.error("PETR is not configured, dropping packet")
+            return
+
+        try:
+            logger.debug("NFQUEUE callback called: {0} bytes of data".format(payload.get_length()))
+            data = payload.get_data()
+
+            family = ord(data[0]) >> 4
+            if family == 4:
+                packet = IPv4Packet.from_bytes(data, decode_payload=False)
+            elif family == 6:
+                packet = IPv6Packet.from_bytes(data, decode_payload=False)
+            else:
+                logger.error("Unknown data packet family {0}".format(family))
+                return
+
+            logger.debug("Data contents: {0!r}".format(packet))
+
+            # Encapsulate data
+            message = DataPacket(payload=data)
+            send_message(message=message, my_sockets=self.sockets, destinations=[settings.config.PETR], port=4341)
+
+        except:
+            logger.exception("Unexpected exception when handling data packet")
+
+
+def handle_control_message(fd_sock, addr, message, control_plane_sockets, data_plane_sockets):
+    received_message = ReceivedMessage(source=addr,
+                                       destination=(fd_sock.address, fd_sock.port),
+                                       message=message,
+                                       socket=fd_sock)
+
+    handle_message(received_message, control_plane_sockets, data_plane_sockets)
+
+
+def handle_data_message(fd_sock, addr, message, control_plane_sockets, data_plane_sockets):
+    # Special case: control-messages encapsulated in data
+    if message.instance_id == 0xffffff:
+        ip_packet = message.payload
+        udp_message = ip_packet.get_final_payload()[1]
+        if not isinstance(udp_message, UDPMessage) \
+        or udp_message.destination_port != 4342:
+            logger.error("Received an invalid LISP control packet over the data plane")
+            return
+
+        control_message = udp_message.payload
+
+        handle_control_message(fd_sock, addr, control_message, control_plane_sockets, data_plane_sockets)
+        return
+
+    # Data: make sure we have raw sockets
+
+    data = message.payload.to_bytes()
+    if isinstance(message.payload, IPv4Packet):
+        if not hasattr(handle_data_message, 'raw_socket_ipv4'):
+            handle_data_message.raw_socket_ipv4 = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_RAW)
+        raw_socket = handle_data_message.raw_socket_ipv4
+    else:
+        if not hasattr(handle_data_message, 'raw_socket_ipv6'):
+            handle_data_message.raw_socket_ipv6 = socket.socket(socket.AF_INET6, socket.SOCK_RAW, socket.IPPROTO_RAW)
+        raw_socket = handle_data_message.raw_socket_ipv6
+
+    # TODO: fix TTL
+
+    logger.debug('{0!r}'.format(message.payload))
+
+    sent = raw_socket.sendto(data, (unicode(message.payload.destination), 0))
+    if sent != len(data):
+        logger.error(u"Could not send decapsulated packet {0!r}".format(message.payload))
+    else:
+        logger.debug(u"Sent decapsulated packet of {0} bytes".format(sent))
+
+
+def main(argv=None):
+    """Command line options."""
+
+    if argv is None:
+        argv = sys.argv
+    else:
+        sys.argv.extend(argv)
+
+    try:
+        # Setup argument parser
+        parser = ArgumentParser(description=__doc__,
+                                formatter_class=RawDescriptionHelpFormatter)
+        parser.add_argument("-v",
+                            "--verbose",
+                            dest="verbose",
+                            action="store_true",
+                            help="be verbose")
+        parser.add_argument("-d",
+                            "--debug",
+                            dest="debug",
+                            action="store_true",
+                            help="show debugging output")
+        parser.add_argument("-C",
+                            "--show-config",
+                            dest="show_config",
+                            action="store_true",
+                            help="show the configuration and exit")
+
+        # Process arguments
+        args = parser.parse_args()
+
+        # Configure the logging process
+        if args.debug:
+            logging_level = logging.DEBUG
+        elif args.verbose:
+            logging_level = logging.INFO
+        else:
+            logging_level = logging.WARNING
+
+        logging.basicConfig(level=logging_level,
+                            format='%(asctime)s [%(threadName)s %(module)s %(levelname)s] %(message)s')
+
+        # Init the settings
+        settings.config = settings.Settings()
+
+        # Show config?
+        if args.show_config:
+            for setting, value in settings.config.__dict__.iteritems():
+                if setting == setting.upper():
+                    # Show the setting
+                    sys.stdout.write("%s=%r\n" % (setting, value))
+            return 2
+
+        # Determine local sockets
+        control_plane_sockets, data_plane_sockets = create_sockets(settings.config)
+
+        nfqueues = []
+        if settings.config.PROCESS_DATA:
+            if settings.config.PETR and (settings.config.NFQUEUE_IPV4 is None or settings.config.NFQUEUE_IPV6 is None):
+                logger.error("PETR configured but not NFQUEUE_IPV4 and NFQUEUE_IPV6")
+                return 2
+
+            # Do we use nfqueue?
+            if settings.config.NFQUEUE_IPV4 is not None or settings.config.NFQUEUE_IPV6 is not None:
+                if not nfqueue:
+                    logger.error("Python nfqueue module not found")
+                    return 2
+
+                # An IPv4 queue
+                callback = nfqueue_callback(settings.config, data_plane_sockets)
+
+                if settings.config.NFQUEUE_IPV4 is not None:
+                    nfqueue_ipv4 = nfqueue.queue()
+                    nfqueue_ipv4.set_callback(callback)
+                    nfqueue_ipv4.fast_open(settings.config.NFQUEUE_IPV4, socket.AF_INET)
+                    nfqueue_ipv4.set_queue_maxlen(5000)
+                    nfqueue_ipv4.set_mode(nfqueue.NFQNL_COPY_PACKET)
+                    nfqueue_ipv4.fileno = nfqueue_ipv4.get_fd
+
+                    nfqueues.append(nfqueue_ipv4)
+
+                if settings.config.NFQUEUE_IPV6 is not None:
+                    nfqueue_ipv6 = nfqueue.queue()
+                    nfqueue_ipv6.set_callback(callback)
+                    nfqueue_ipv6.fast_open(settings.config.NFQUEUE_IPV6, socket.AF_INET6)
+                    nfqueue_ipv6.set_queue_maxlen(5000)
+                    nfqueue_ipv6.set_mode(nfqueue.NFQNL_COPY_PACKET)
+                    nfqueue_ipv6.fileno = nfqueue_ipv6.get_fd
+
+                    nfqueues.append(nfqueue_ipv6)
+
+        if not control_plane_sockets:
+            logger.error("Not listening on any addresses")
+            return 2
+
+        # Give the sockets to the address tree nodes
+        for instance_id in settings.config.INSTANCES:
+            instance = settings.config.INSTANCES[instance_id]
+            for address_family in instance:
+                tree = instance[address_family]
+                tree.set_sockets(control_plane_sockets, data_plane_sockets)
+
+        # Start the signal handlers
+        signal_pipe, signal_pipe_w = os.pipe()
+        handle_signal(signal.SIGHUP, signal_pipe_w)
+        handle_signal(signal.SIGINT, signal_pipe_w)
+        handle_signal(signal.SIGTERM, signal_pipe_w)
+
+        logger.info("Waiting for incoming messages to process")
+        running = True
+        while running:
+            try:
+                # Get the active sockets
+                active_sockets = [sock
+                                  for sock in control_plane_sockets + data_plane_sockets
+                                  if sock.fileno() is not None]
+
+                try:
+                    rlist = []
+                    rlist, dummy, dummy = select.select(active_sockets + nfqueues + [signal_pipe], [], [], 5.0)
+                except select.error, e:
+                    if e[0] == socket.EINTR:
+                        # So we got interrupted, so what?
+                        pass
+
+                for fd_sock in rlist:
+                    if fd_sock in control_plane_sockets:
+                        addr = "Unknown"
+                        try:
+                            data, addr = fd_sock.recvfrom(65536)
+                            message = ControlMessage.from_bytes(data)
+                            handle_control_message(fd_sock, addr, message, control_plane_sockets, data_plane_sockets)
+                        except:
+                            logger.exception(u"Uncaught exception when handling control-plane message from %s", addr)
+
+                    elif fd_sock in data_plane_sockets:
+                        addr = "Unknown"
+                        try:
+                            data, addr = fd_sock.recvfrom(65536)
+                            message = DataPacket.from_bytes(data)
+                            handle_data_message(fd_sock, addr, message, control_plane_sockets, data_plane_sockets)
+                        except:
+                            logger.exception(u"Uncaught exception when handling data-plane message from %s", addr)
+
+                    elif fd_sock in nfqueues:
+                        try:
+                            logger.debug(u"Triggered NFQUEUE")
+                            fd_sock.process_pending(5)
+                        except:
+                            logger.exception(u"Uncaught exception when handling NFQUEUE message")
+
+                    elif fd_sock == signal_pipe:
+                        # Signal received, retrieve it
+                        sig = ord(os.read(fd_sock, 1))
+                        if sig in (signal.SIGINT, signal.SIGTERM):
+                            # Stop processing
+                            logger.info("Shutting down")
+                            running = False
+
+                        elif sig == signal.SIGHUP:
+                            logger.info("Received HUP, checking addresses")
+                            auto_addresses.update_addresses()
+
+            except:
+                logger.exception("Unexpected exception")
+
+        logger.info("LISPd shut down")
+
+        return 0
+    except ConfigurationError:
+        logger.exception("Configuration error")
+        return 1
+    except SystemExit:
+        # All ok, pass it on
+        raise
+    except:
+        logger.exception("Unexpected exception")
+        return 2
+
+
+if __name__ == "__main__":
+    sys.exit(main())

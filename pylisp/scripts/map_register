@@ -1,0 +1,63 @@
+#!/usr/bin/env python
+'''
+Created on 11 jan. 2013
+
+@author: sander
+'''
+
+from ipaddress import ip_address, ip_network
+from pylisp.packet.lisp.control.base import ControlMessage
+from pylisp.packet.lisp.control.constants import KEY_ID_HMAC_SHA_1_96
+from pylisp.packet.lisp.control.locator_record import LocatorRecord
+from pylisp.packet.lisp.control.map_register import MapRegisterMessage
+from pylisp.packet.lisp.control.map_register_record import MapRegisterRecord
+import random
+import socket
+
+my_name = socket.getfqdn()
+source_port = 4342
+
+# Build the map request
+nonce = ''.join([chr(random.choice(xrange(256))) for i in range(8)])
+
+# d_addrs = socket.getaddrinfo('127.0.0.1', 4342, 0, 0, socket.SOL_UDP)
+d_addrs = socket.getaddrinfo('ms1.lispnet.net', 4342, 0, 0, socket.SOL_UDP)
+for d_family, d_socktype, d_proto, d_canonname, d_sockaddr in d_addrs:
+    destination = ip_address(unicode(d_sockaddr[0]))
+    print 'Try %s' % destination
+
+    s_addrs = socket.getaddrinfo(my_name, source_port, d_family, d_socktype, d_proto)
+    for s_family, s_socktype, s_proto, s_canonname, s_sockaddr in s_addrs:
+        source = ip_address(unicode(s_sockaddr[0]))
+        print '- From %s' % source
+
+        # Build packet
+        locator = LocatorRecord(priority=1, weight=100, local=True,
+                                reachable=True, address=ip_address(u'127.0.0.1'))
+        record = MapRegisterRecord(ttl=1440,
+                                   action=MapRegisterRecord.ACT_NO_ACTION,
+                                   authoritative=True,
+                                   map_version=0,
+                                   eid_prefix=ip_network(u'37.77.62.0/24'),
+                                   locator_records=[locator])
+        reg = MapRegisterMessage(proxy_map_reply=True,
+                                 want_map_notify=False,
+                                 nonce=nonce,
+                                 key_id=KEY_ID_HMAC_SHA_1_96,
+                                 records=[record])
+        reg.insert_authentication_data('testje')
+
+        try:
+            sock = socket.socket(d_family, d_socktype, d_proto)
+            sock.bind(s_sockaddr)
+            sock.sendto(bytes(reg), d_sockaddr)
+            sock.settimeout(1.0)
+            data = sock.recv(4096)
+            response = ControlMessage.from_bytes(data)
+            print repr(response)
+            print response.nonce == nonce
+        except socket.error:
+            continue
+
+        # Print result
+        print
