@@ -2,26 +2,29 @@ import random
 import os
 import netifaces
 import ipaddress
+from ipaddress import IPv4Address
 
 def get_my_ipaddress():
     for interface in netifaces.interfaces():
-        for link in netifaces.ifaddresses(interface)[netifaces.AF_INET]:
-            try:
+       if  netifaces.ifaddresses(interface) != {} and interface != 'fw0':
+           for link in netifaces.ifaddresses(interface)[netifaces.AF_INET]:
+             try:
                 ipt = ipaddress.ip_address(link['addr'])
                 if not ipt.is_private and not ipt.is_loopback and not ipt.is_link_local:
-                    return link['addr']
-            except:
+                   return link['addr']
+             except:
                 pass
     return False
 	
 def get_my_ipaddress6():
     for interface in netifaces.interfaces():
-        for link in netifaces.ifaddresses(interface)[netifaces.AF_INET6]:
-            try:
+        if netifaces.ifaddresses(interface) != {} and interface != 'fw0':
+           for link in netifaces.ifaddresses(interface)[netifaces.AF_INET6]:
+             try:
                 ipt = ipaddress.ip_address(link['addr'])
                 if not ipt.is_private and not ipt.is_loopback and not ipt.is_link_local:
                     return link['addr']
-            except:
+             except:
                 pass
     return False
 	

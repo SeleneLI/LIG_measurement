@@ -79,6 +79,7 @@ class MapReplyRecord:
         record.eid_prefix = read_afi_address_from_bitstream(bitstream,
                                                             eid_prefix_len)
 
+
         # Read the locator records
         for dummy in range(locator_record_count):
             locator_record = LocatorRecord.from_bytes(bitstream)
