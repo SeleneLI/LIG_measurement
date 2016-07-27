@@ -61,5 +61,10 @@ MAX_EPHEMERAL_PORT = 65535
 #Generate a 8 octets random value
 def get_a_nonce():
 	return bytearray(os.urandom(8))
+
+
+
+
+
 	
 

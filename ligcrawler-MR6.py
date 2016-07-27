@@ -12,7 +12,7 @@ from lispy.ip import IPv4Packet, IPv6Packet, UDPMessage
 from numpy import*
 
 
-def scan( Name , Start , End , Timestamp):
+def scan( Name , Start , End , Timestamp ,port_source):
 
 
     map_resolver = str('217.8.97.6')
@@ -22,7 +22,7 @@ def scan( Name , Start , End , Timestamp):
 
     i=1
     # Getting random port number
-    port_source = random.choice(range(MIN_EPHEMERAL_PORT, 65535))
+    #port_source = random.choice(range(MIN_EPHEMERAL_PORT, 65535))
     while ipaddress.ip_address(Start) <= ipaddress.ip_address(End):
 
         # Resolve IP from name
@@ -83,8 +83,8 @@ def scan( Name , Start , End , Timestamp):
             rtt = (after - before)* 1000
 
         except socket.timeout:
-            display_information.display(None , 0, Start, map_resolver, ip_my , Timestamp=Timestamp , rtt= None , sender_addr= None  )
-            print('processing ' + Name + '...')
+            display_information.display(None , 0, Start, map_resolver, ip_my , Timestamp=Timestamp , rtt= None , sender_addr= None , resolver_num=7  )
+            print('processing ' + map_resolver + '  '+ Name + '...' +  Start)
             nextint = int(ipaddress.IPv4Address(Start)) + 1
             if nextint <= int(ipaddress.IPv4Address(End)):
                 Start= str(ipaddress.IPv4Address(nextint))
@@ -98,12 +98,12 @@ def scan( Name , Start , End , Timestamp):
 
         # LISP Map Reply, there are records
         if len(map_reply.records[0].locator_records) != 0:
-            display_information.display(map_reply , 1 , Start , map_resolver , ip_my , rtt , sender_addr , Timestamp )
-            print('processing' + Name + '...')
+            display_information.display(map_reply , 1 , Start , map_resolver , ip_my , rtt , sender_addr , Timestamp , resolver_num=7 )
+            print('processing ' + map_resolver + '  '+ Name + '...' +  Start)
         # negative Map Reply
         else:
-            display_information.display(map_reply, -1, Start , map_resolver , ip_my , rtt , sender_addr , Timestamp)
-            print('processing' + Name + '...')
+            display_information.display(map_reply, -1, Start , map_resolver , ip_my , rtt , sender_addr , Timestamp , resolver_num=7)
+            print('processing ' + map_resolver + '  '+ Name + '...' +  Start)
         #incrementation adresse IP
         network= ipaddress.ip_network(str(map_reply.records[0].eid_prefix))
         a = network.num_addresses
@@ -115,12 +115,13 @@ def scan( Name , Start , End , Timestamp):
             break
 
     print(time.strftime(' %a , %l:%M%p %z on %b %d, %Y')) # ' 1:36PM EST on Oct 18, 2010'
-    print ('scanning done  ' + Name)
+    print ('scanning done  ' + map_resolver + '  '+ Name)
 
 if __name__ == '__main__':
     try:
 
       Threads = []
+      port_source = 33368
       #Get Timestamp
       controller = open('controller.log' , 'r')
       Timestamp = controller.readline().strip('\n')
@@ -130,17 +131,21 @@ if __name__ == '__main__':
 
 
 
-      t1 = Thread(target=scan ,args=('Thread1','0.0.0.0'     , '153.16.6.255' , Timestamp))
-      t2 = Thread(target=scan, args=('Thread2','153.16.7.0'   , '153.16.17.255' , Timestamp))
-      t3 = Thread(target=scan, args=('Thread3', '153.16.18.0', '153.16.25.255' , Timestamp))
-      t4 = Thread(target=scan, args=('Thread4','153.16.26.0' , '153.16.39.255' , Timestamp ))
-      t5 = Thread(target=scan, args=('Thread5','153.16.40.0', '153.16.54.255' , Timestamp ))
-      t6 = Thread(target=scan, args=('Thread6','153.16.55.0', '153.16.120.255' , Timestamp ))
-      t7 = Thread(target=scan, args=('Thread7','153.16.121.0', '153.16.144.255' , Timestamp ))
-      t8 = Thread(target=scan, args=('Thread8','153.16.145.0', '153.16.150.255' , Timestamp))
-      t9 = Thread(target=scan, args=('Thread9','153.16.151.0', '153.16.155.255' , Timestamp))
-      t10 = Thread(target=scan, args=('Thread10', '153.16.156.0', '255.255.255.255', Timestamp))
-      # t11 = Thread(target=scan,args=('Thread11','153.16.203.0'  , '255.255.255.255' , Timestamp))
+      # Scanning the IPs from 0.0.0.0 to 255.255.255.255
+      t1 = Thread(target=scan ,args=('Thread1','0.0.0.0'     , '153.16.6.255' , Timestamp ,port_source ))
+      t2 = Thread(target=scan, args=('Thread2','153.16.7.0'   , '153.16.27.255' , Timestamp ,port_source+1))
+      t3 = Thread(target=scan, args=('Thread3', '153.16.28.0', '153.16.48.255' , Timestamp ,port_source+2))
+      t4 = Thread(target=scan, args=('Thread4','153.16.49.0' , '153.16.69.255' , Timestamp ,port_source+3 ))
+      t5 = Thread(target=scan, args=('Thread5','153.16.70.0', '153.16.90.255' , Timestamp  ,port_source+4))
+      t6 = Thread(target=scan, args=('Thread6','153.16.91.0', '153.16.111.255' , Timestamp  ,port_source+5))
+      t7 = Thread(target=scan, args=('Thread7', '153.16.112.0', '153.16.132.255', Timestamp ,port_source+6))
+      t8 = Thread(target=scan, args=('Thread8','153.16.133.0', '153.16.153.255' , Timestamp ,port_source+7 ))
+      t9 = Thread(target=scan, args=('Thread9','153.16.154.0', '153.16.174.255' , Timestamp ,port_source+8))
+      t10 = Thread(target=scan, args=('Thread10','153.16.175.0', '153.16.195.255' , Timestamp ,port_source+9))
+      t11 = Thread(target=scan,args=('Thread11','153.16.196.0', '153.16.216.255' , Timestamp ,port_source+10))
+      t12 = Thread(target=scan, args=('Thread12', '153.16.217.0', '153.16.237.255', Timestamp ,port_source+11))
+      t13 = Thread(target=scan, args=('Thread13', '153.16.238.0', '153.16.255.255', Timestamp ,port_source+12))
+      t14 = Thread(target=scan,args=('Thread14','153.17.0.0'  , '255.255.255.255' , Timestamp ,port_source+13))
 
       Threads.append(t1)
       Threads.append(t2)
@@ -152,7 +157,10 @@ if __name__ == '__main__':
       Threads.append(t8)
       Threads.append(t9)
       Threads.append(t10)
-     # Threads.append(t11)
+      Threads.append(t11)
+      Threads.append(t12)
+      Threads.append(t13)
+      Threads.append(t14)
 
       for x in Threads :
           x.start()
@@ -163,15 +171,7 @@ if __name__ == '__main__':
 
 
       print(time.strftime(' %a , %l:%M%p %z on %b %d, %Y'))  # ' 1:36PM EST on Oct 18, 2010'
-      # Copy the EIDs_Prefix list
-      list = open('EID_list_' + str(Timestamp) + '.log', 'r+')
-      data = list.readlines()
-      list.close()
 
-      # create the current EID_Prefix
-      list_current = open('EID_list_' + 'current' + '.log', 'w+')
-      list_current.writelines(data)
-      list_current.close()
       sys.exit()
 
     except Exception as e :
