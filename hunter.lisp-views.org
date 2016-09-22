@@ -1,0 +1,347 @@
+from __future__ import unicode_literals
+import sys
+import time
+import socket
+import ipaddress
+from threading import Thread
+from lispy import display_information
+from ipaddress import IPv4Address, IPv4Network
+from lispy.utils import *
+from lispy.lisp import MapRequestMessage, EncapsulatedControlMessage, MapReplyMessage
+from lispy.ip import IPv4Packet, IPv6Packet, UDPMessage
+from numpy import*
+
+
+def scan( Name , Start , End):
+
+
+    map_resolver = str('149.20.48.61') #'137.194.18.132'
+
+    # Display the starting Time
+    print('Thread ' + Name + ' started ' + time.strftime(' %a , %l:%M%p %z on %b %d, %Y')) # ' 1:36PM EST on Oct 18, 2010'
+
+    i=1
+    # Getting random port number
+    port_source = random.choice(range(MIN_EPHEMERAL_PORT, 65535))
+    while ipaddress.ip_address(Start) <= ipaddress.ip_address(End):
+
+        # Resolve IP from name
+        try:
+            mr_addr = socket.getaddrinfo(map_resolver, LISP_CONTROL_PORT, 0, 0, socket.SOL_UDP)
+            eid_addr = socket.getaddrinfo( Start, 0, 0, 0, socket.SOL_UDP)   #dst_eid
+
+        except:
+             print('ERROR: invalid addresses')
+             sys.exit()
+
+
+        # Converting ip string TO IPV4/6Address object
+        ip_map_resolve = ipaddress.ip_address(mr_addr[0][4][0])
+        ip_eid = ipaddress.ip_address(eid_addr[0][4][0])
+
+        # Get our IP Address, our address must be routable on the interne
+        ip_my = ipaddress.ip_address(get_my_ipaddress())
+        ip_my6 = ipaddress.ip_address(get_my_ipaddress6())
+
+        # generate a nonce
+        nonce = get_a_nonce()
+
+        # Building the LISP Control Message (lcm)
+        lcm = MapRequestMessage(eid_prefix=ip_eid, itr_rloc=ip_my, nonce=nonce)
+
+        # Building UDP Header
+        udp = UDPMessage(source_port=port_source, destination_port=LISP_CONTROL_PORT, payload=lcm)
+
+        # Building Inner IP Header
+        # Computing udp checksum, checksum is only mandatory in IPV6
+        if isinstance(ip_eid, IPv4Address):
+            ih = IPv4Packet(source=ip_my, destination=ip_eid, payload=udp, protocol=IPPROTO_UDP)
+            udp.checksum = udp.calculate_checksum(source=ip_my, destination=ip_eid)
+
+        else:
+            ih = IPv6Packet(source=ip_my6, destination=ip_eid, payload=udp, next_header=IPPROTO_UDP)
+            udp.checksum = udp.calculate_checksum(source=ip_my6, destination=ip_eid)
+
+        # Building LISP Header
+        lh= EncapsulatedControlMessage(payload=ih)
+
+        #UDP AND the Outer IP Header (OH) are built by the kernel
+
+        # Creating the socket
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        sock.bind((str(ip_my),port_source))
+
+
+        # set a 3 sec timeout
+        sock.settimeout(3)
+        try:
+            # Send the request and wait for the reply
+            before = time.time()
+            sock.sendto(lh.to_bytes(), mr_addr[0][4])
+            data, sender_addr = sock.recvfrom(512)
+            after = time.time()
+            rtt = after - before
+
+        except socket.timeout:
+            display_information.display(None , 0, Start, map_resolver, ip_my , rtt= None , sender_addr= None ) #dst_eid
+            print('processing ' + Name + '...')
+            nextint = int(ipaddress.IPv4Address(Start)) + 1   #dst_eid
+            if nextint <= int(ipaddress.IPv4Address(End)):  #'255.255.255.255'
+                Start= str(ipaddress.IPv4Address(nextint))  #dst_eid
+                i = i + 1
+            else:
+                break
+            continue
+
+        # PRINT THE MAPPING ENTRY#
+        map_reply = MapReplyMessage.from_bytes(data)
+
+        # LISP Map Reply, there are records
+        if len(map_reply.records[0].locator_records) != 0:
+            display_information.display(map_reply , 1 , Start , map_resolver , ip_my , rtt , sender_addr ) #dst_eid
+            print('processing' + Name + '...')
+        # negative Map Reply
+        else:
+            display_information.display(map_reply, -1, Start , map_resolver , ip_my , rtt , sender_addr) #dst_eid
+            print('processing' + Name + '...')
+        #incrementation adresse IP
+        network= ipaddress.ip_network(str(map_reply.records[0].eid_prefix))
+        a = network.num_addresses
+        nextint = int(ipaddress.IPv4Address(Start)) + a   #dst_eid
+        if nextint <= int(ipaddress.IPv4Address(End)):   #'255.255.255.255'
+           Start = str(ipaddress.IPv4Address(nextint)) #dst_eid
+           i = i+1
+        else:
+            break
+
+    print(time.strftime(' %a , %l:%M%p %z on %b %d, %Y')) # ' 1:36PM EST on Oct 18, 2010'
+    print ('scanning done  ' + Name)
+
+if __name__ == '__main__':
+    try:
+      Threads = []
+      t1 = Thread(target=scan ,args=('Thread1','0.0.0.0'     , '153.16.6.255'))
+      t2 = Thread(target=scan, args=('Thread2','153.16.7.0'   , '153.16.17.255'))
+      t3 = Thread(target=scan, args=('Thread3', '153.16.18.0', '153.16.25.255'))
+      t4 = Thread(target=scan, args=('Thread4','153.16.26.0' , '153.16.39.255' ))
+      t5 = Thread(target=scan, args=('Thread5','153.16.40.0', '153.16.54.255' ))
+      t6 = Thread(target=scan, args=('Thread6','153.16.55.0', '153.16.120.255' ))
+      t7 = Thread(target=scan, args=('Thread7','153.16.121.0', '153.16.144.255' ))
+      t8 = Thread(target=scan, args=('Thread8','153.16.145.0', '153.16.150.255' ))
+      t9 = Thread(target=scan, args=('Thread9','153.16.151.0', '153.16.155.255' ))  #'153.16.151.0', '153.16.201.255'
+      t10 = Thread(target=scan,args=('Thread10','153.16.156.0', '153.16.201.255' ))
+      t11 = Thread(target=scan,args=('Thread11','153.16.202.0'  , '255.255.255.255'))
+      #-------------------------------------------------
+    #  t1 = Thread(target=scan, args=('Thread1', '0.0.0.0', '153.16.10.255'))    #2:30 # 20 mins until 153.16.0.0
+    #  t2 = Thread(target=scan, args=('Thread2', '153.16.11.0', '153.16.17.255')) 1:30
+    #  t3 = Thread(target=scan, args=('Thread2', '153.16.18.0', '153.16.25.255'))
+    #  t4 = Thread(target=scan, args=('Thread3', '153.16.26.0', '153.16.39.255')) 1 some mins
+     # t5 = Thread(target=scan, args=('Thread4', '153.16.40.0', '153.16.54.255'))  nothing
+   #   t6 = Thread(target=scan, args=('Thread5', '153.16.55.0', '153.16.120.255'))  1 some mins
+   #   t7 = Thread(target=scan, args=('Thread6', '153.16.121.0', '153.16.144.255'))  nothing
+    #  t8 = Thread(target=scan, args=('Thread7', '153.16.145.0', '153.16.150.255')) 1:30
+    #  t9 = Thread(target=scan, args=('Thread8', '153.16.151.0', '153.16.201.255'))  2:30
+     # t10 = Thread(target=scan, args=('Thread9', '153.16.202.0', '255.255.255.255'))  12:20 # 30 mins
+     #------------------------------------------------
+     # t1 = Thread(target=scan, args= ('Thread1', '0.0.0.0',    '153.15.255.255'))
+     # t2 = Thread(target=scan, args= ('Thread2', '153.16.0.0', '153.16.1.255'))#*
+     # t3 = Thread(target=scan, args=('Thread3', '153.16.2.0', '153.16.2.255'))##*
+     # t4 = Thread(target=scan, args=('Thread4', '153.16.3.0', '153.16.5.255'))
+     # t5 = Thread(target=scan, args= ('Thread5', '153.16.6.0', '153.16.7.255'))
+     # t6 = Thread(target=scan, args=('Thread6', '153.16.8.0', '153.16.9.255'))#*
+     # t7 = Thread(target=scan, args=('Thread7', '153.16.10.0', '153.16.10.255'))##*
+     # t8 = Thread(target=scan, args= ('Thread8', '153.16.11.0', '153.16.12.255'))#*
+     # t9 = Thread(target=scan, args=('Thread9', '153.16.13.0', '153.16.13.255'))##*
+     # t10 = Thread(target=scan, args= ('Thread10', '153.16.14.0', '153.16.15.255'))#*
+     # t11 = Thread(target=scan, args=('Thread11', '153.16.16.0', '153.16.16.255'))##*
+     # t12 = Thread(target=scan, args= ('Thread12', '153.16.17.0', '153.16.18.255'))#*
+     # t13 = Thread(target=scan, args=('Thread13', '153.16.19.0', '153.16.19.255'))##*
+     # t14 = Thread(target=scan, args= ('Thread14', '153.16.20.0', '153.16.21.255'))#*
+     # t15 = Thread(target=scan, args=('Thread15', '153.16.22.0', '153.16.22.255'))##*
+     # t16 = Thread(target=scan, args= ('Thread16', '153.16.23.0', '153.16.24.255'))#* #   31-35
+     # t17 = Thread(target=scan, args=('Thread17', '153.16.25.0', '153.16.25.255'))##*
+     # t18 = Thread(target=scan, args= ('Thread18', '153.16.26.0', '153.16.28.255')) #   36-39
+     # t19 = Thread(target=scan, args=('Thread19', '153.16.29.0', '153.16.30.255'))
+     # t20 = Thread(target=scan, args=('Thread20', '153.16.31.0', '153.16.35.255')) ##  40-54
+     # t21 = Thread(target=scan, args=('Thread21', '153.16.36.0', '153.16.60.255')) #  55-60
+     # t22 = Thread(target=scan, args=('Thread22', '153.16.61.0',  '153.16.62.255'))#*
+     # t23 = Thread(target=scan, args=('Thread23', '153.16.63.0', '153.16.63.255'))##*
+     # t24 = Thread(target=scan, args=('Thread24', '153.16.64.0', '153.16.65.255'))#*
+     # t25 = Thread(target=scan, args=('Thread25', '153.16.66.0', '153.16.66.255'))##*
+     # t26 = Thread(target=scan, args=('Thread26', '153.16.67.0', '153.16.68.255'))#* # 71-75
+     # t27 = Thread(target=scan, args=('Thread27', '153.16.69.0', '153.16.70.255'))##*
+     # t28 = Thread(target=scan, args=('Thread28', '153.16.71.0', '153.16.80.255')) #  76-80
+     # t29 = Thread(target=scan, args=('Thread29', '153.16.81.0', '153.16.90.255')) # 81-90
+     # t30 = Thread(target=scan, args=('Thread30', '153.16.91.0', '153.16.95.255')) # 91-95
+     # t31 = Thread(target=scan, args=('Thread31', '153.16.96.0', '153.16.100.255')) # 96-100
+     # t32 = Thread(target=scan, args=('Thread32', '153.16.101.0', '153.16.105.255')) # 101-105
+     # t33 = Thread(target=scan, args=('Thread33', '153.16.106.0', '153.16.110.255')) # 106-110
+     # t34 = Thread(target=scan, args=('Thread34', '153.16.111.0', '153.16.115.255')) # 111-115
+     # t35 = Thread(target=scan, args=('Thread35', '153.16.116.0', '153.16.120.255')) # 116-120
+     # t36 = Thread(target=scan, args=('Thread36', '153.16.121.0', '153.16.144.255'))  ## 121-144
+     # t37 = Thread(target=scan, args=('Thread37', '153.16.145.0', '153.16.146.255'))
+     # t38 = Thread(target=scan, args=('Thread38', '153.16.147.0', '153.16.148.255'))#*
+     # t39 = Thread(target=scan, args=('Thread39', '153.16.149.0', '153.16.149.255'))##*
+     # t40 = Thread(target=scan, args=('Thread40', '153.16.150.0', '153.16.151.255'))#*
+     # t41 = Thread(target=scan, args=('Thread41', '153.16.152.0', '153.16.152.255')) ##*
+     # t42 = Thread(target=scan, args=('Thread42','153.16.153.0', '153.16.154.255'))#*
+     # t43 = Thread(target=scan, args=('Thread43', '153.16.155.0', '153.16.155.255'))##*
+     # t44 = Thread(target=scan, args=('Thread44', '153.16.156.0', '153.16.157.255'))#*
+     # t45 = Thread(target=scan, args=('Thread45', '153.16.158.0', '153.16.158.255')) ##*
+     # t46 = Thread(target=scan, args=('Thread46', '153.16.159.0', '153.16.160.255'))
+     # t47 = Thread(target=scan, args=('Thread47', '153.16.161.0', '153.16.165.255')) #
+     # t48 = Thread(target=scan, args=('Thread48', '153.16.160.0', '153.16.201.255')) ##
+     # t49 = Thread(target=scan, args=('Thread49', '153.16.202.0', '255.255.255.255'))
+
+#-----------------------------------------------
+     # t1 = Thread(target=scan, args=('Thread1', '0.0.0.0', '153.15.255.255'))
+     # t2 = Thread(target=scan, args=('Thread2', '153.16.0.0', '153.16.3.255'))  # *
+     # t3 = Thread(target=scan, args=('Thread3', '153.16.3.0', '153.16.5.255'))
+     # t4 = Thread(target=scan, args=('Thread4', '153.16.6.0', '153.16.7.255'))
+     # t5 = Thread(target=scan, args=('Thread5', '153.16.8.0', '153.16.10.255'))  # *
+     # t6 = Thread(target=scan, args=('Thread6', '153.16.11.0', '153.16.13.255'))  # *
+     # t7 = Thread(target=scan, args=('Thread7', '153.16.14.0', '153.16.16.255'))  # *
+     # t8 = Thread(target=scan, args=('Thread8', '153.16.17.0', '153.16.19.255'))  # *
+     # t9 = Thread(target=scan, args=('Thread9', '153.16.20.0', '153.16.22.255'))  # *
+     # t10 = Thread(target=scan, args=('Thread10', '153.16.23.0', '153.16.25.255'))  # * #   31-35
+     # t11 = Thread(target=scan, args=('Thread11', '153.16.26.0', '153.16.28.255'))  # 36-39
+     # t12 = Thread(target=scan, args=('Thread12', '153.16.29.0', '153.16.30.255'))
+     # t13 = Thread(target=scan, args=('Thread13', '153.16.31.0', '153.16.35.255'))  ##  40-54
+     # t14 = Thread(target=scan, args=('Thread14', '153.16.36.0', '153.16.60.255'))  # 55-60
+     # t15 = Thread(target=scan, args=('Thread15', '153.16.61.0', '153.16.63.255'))  # *
+     # t16 = Thread(target=scan, args=('Thread16', '153.16.64.0', '153.16.66.255'))  # *
+     # t17 = Thread(target=scan, args=('Thread17', '153.16.67.0', '153.16.69.255'))  # * # 71-75
+     # t18 = Thread(target=scan, args=('Thread18', '153.16.70.0', '153.16.80.255'))  # 76-80
+     # t19 = Thread(target=scan, args=('Thread19', '153.16.81.0', '153.16.90.255'))  # 81-90
+     # t20 = Thread(target=scan, args=('Thread20', '153.16.91.0', '153.16.95.255'))  # 91-95
+     # t21 = Thread(target=scan, args=('Thread21', '153.16.96.0', '153.16.100.255'))  # 96-100
+     # t22 = Thread(target=scan, args=('Thread22', '153.16.101.0', '153.16.105.255'))  # 101-105
+     # t23 = Thread(target=scan, args=('Thread23', '153.16.106.0', '153.16.110.255'))  # 106-110
+     # t24 = Thread(target=scan, args=('Thread24', '153.16.111.0', '153.16.115.255'))  # 111-115
+     # t25 = Thread(target=scan, args=('Thread25', '153.16.116.0', '153.16.120.255'))  # 116-120
+     # t26 = Thread(target=scan, args=('Thread26', '153.16.121.0', '153.16.144.255'))  ## 121-144
+     # t27 = Thread(target=scan, args=('Thread27', '153.16.145.0', '153.16.146.255'))
+     # t28 = Thread(target=scan, args=('Thread28', '153.16.147.0', '153.16.149.255'))  # *
+     # t29 = Thread(target=scan, args=('Thread29', '153.16.150.0', '153.16.152.255'))  # *
+     # t30 = Thread(target=scan, args=('Thread30', '153.16.153.0', '153.16.155.255'))  # *
+     # t31 = Thread(target=scan, args=('Thread31', '153.16.156.0', '153.16.158.255'))  # *
+     # t32 = Thread(target=scan, args=('Thread32', '153.16.159.0', '153.16.160.255'))
+     # t33 = Thread(target=scan, args=('Thread33', '153.16.161.0', '153.16.165.255'))  #
+     # t34 = Thread(target=scan, args=('Thread34', '153.16.160.0', '153.16.201.255'))  ##
+     # t35 = Thread(target=scan, args=('Thread35', '153.16.202.0', '255.255.255.255'))
+
+#-----------------------------------------------------------------------------------------
+
+      t1.start()
+      t2.start()
+      t3.start()
+      t4.start()
+      t5.start()
+      t6.start()
+      t7.start()
+      t8.start()
+      t9.start()
+      t10.start()
+      t11.start()
+    #  t12.start()
+    #  t13.start()
+    #  t14.start()
+    #  t15.start()
+    #  t16.start()
+    #  t17.start()
+    #  t18.start()
+    #  t19.start()
+    #  t20.start()
+    #  t21.start()
+    #  t22.start()
+    #  t23.start()
+    #  t24.start()
+    #  t25.start()
+    #  t26.start()
+    #  t27.start()
+    #  t28.start()
+    #  t29.start()
+    #  t30.start()
+    #  t31.start()
+    #  t32.start()
+    #  t33.start()
+    #  t34.start()
+    #  t35.start()
+     # t36.start()
+     # t37.start()
+     # t38.start()
+     # t39.start()
+     # t40.start()
+     # t41.start()
+     # t42.start()
+     # t43.start()
+     # t44.start()
+     # t45.start()
+     # t46.start()
+     # t47.start()
+     # t48.start()
+     # t49.start()
+
+      t1.join()
+      t2.join()
+      t3.join()
+      t4.join()
+      t5.join()
+      t6.join()
+      t7.join()
+      t8.join()
+      t9.join()
+      t10.join()
+      t11.join()
+    #  t12.join()
+    #  t13.join()
+    #  t14.join()
+    #  t15.join()
+    #  t16.join()
+    #  t17.join()
+    #  t18.join()
+    #  t19.join()
+    #  t20.join()
+    #  t21.join()
+    #  t22.join()
+     # t23.join()
+    #  t24.join()
+    #  t25.join()
+    #  t26.join()
+    #  t27.join()
+    # t28.join()
+    #  t29.join()
+    #  t30.join()
+   #   t31.join()
+    #  t32.join()
+    #  t33.join()
+    #  t34.join()
+    #  t35.join()
+     # t36.join()
+     # t37.join()
+     # t38.join()
+     # t39.join()
+     # t40.join()
+     # t41.join()
+     # t42.join()
+     # t43.join()
+     # t44.join()
+     # t45.join()
+     # t46.join()
+     # t47.join()
+     # t48.join()
+     # t49.join()
+
+
+      print(time.strftime(' %a , %l:%M%p %z on %b %d, %Y'))  # ' 1:36PM EST on Oct 18, 2010'
+      sys.exit()
+
+    except Exception as e :
+      print(e)
+      sys.exit()
+
+
+
+
+
+

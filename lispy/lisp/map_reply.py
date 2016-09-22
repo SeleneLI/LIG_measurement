@@ -77,6 +77,7 @@ class MapReplyMessage:
         # Read the nonce
         packet.nonce = bitstream.read('bytes:8')
 
+
         # Read the records
         for dummy in range(record_count):
             record = MapReplyRecord.from_bytes(bitstream)
