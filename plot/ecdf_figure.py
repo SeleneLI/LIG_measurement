@@ -9,6 +9,7 @@ import statistics
 import matplotlib.pyplot as plt
 from matplotlib.legend_handler import HandlerLine2D
 from statsmodels.distributions.empirical_distribution import ECDF
+from config.config import *
 
 
 
@@ -102,6 +103,9 @@ ecdf_overall = ECDF(overall_RTTs)
 
 
 # Plot the Figure
+# To automatically produce the size of the figure
+mpl.rcParams['text.usetex'] = True
+mpl.rcParams.update({'figure.autolayout': True})
 
 negative , =plt.plot(ecdf_negative.x , ecdf_negative.y  , 'r-' , label = 'Negative Map-Reply' )
 answered , =plt.plot(ecdf_lisp.x , ecdf_lisp.y , 'g--' , label = 'LISP Map-Reply')
@@ -112,8 +116,10 @@ plt.legend(handler_map={overall: HandlerLine2D(numpoints=1)})
 plt.legend(handles=[negative , answered, overall], loc=4)
 plt.axis([ 0 , 5000 , 0 , 1])
 plt.grid(True)
-plt.xlabel('rtt(ms)')
-plt.ylabel('ecdf')
+plt.xlabel('rtt(ms)', fontLabel)
+plt.ylabel('ecdf', fontLabel)
+plt.xticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
+plt.yticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
 plt.show()
 
 sys.exit()
