@@ -1,29 +1,37 @@
 from __future__ import unicode_literals
 import ipaddress
 import re
+import sys
 
 
 def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
 
  # Wait until to get the pirmission to write in the file (Flag = 0 )
-# while True :
-#   controller = open('controller.log', 'r+')
-#   flag = controller .readlines()
-#   if len(flag) != 0:
-#       if flag[1] == '1\n':
-#          controller.close()
-#          controller = open('controller.log', 'r+')
-#          flag = controller .readlines()
-#       else:
-#           break
-#   else:
-#       continue
+ try:
+   while True :
 
- # Lock the file  ( Flag = 1)
-# flag[1] = '1\n'
-# controller = open('controller.log', 'w+')
-# controller.writelines(flag)
-# controller.close()
+     controller = open('controller.log', 'r+')
+     flag = controller .readlines()
+     if len(flag) != 0:
+        if flag[1] == '1\n':
+           controller.close()
+           #controller = open('controller.log', 'r+')
+           #flag = controller .readlines()
+        else:
+            break
+     else:
+        continue
+
+
+  # Lock the file  ( Flag = 1)
+   flag[1] = '1\n'
+   controller = open('controller.log', 'w+')
+   controller.writelines(flag)
+   controller.close()
+
+ except:
+
+     sys.exit()
 
  # check if the destination EID belong to the EID_Prefix
  if ipaddress.ip_address(dst_EID) in ipaddress.ip_network(EID_Prefix) :
@@ -79,31 +87,32 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
 
        else:
          if resolver_num == 1:
-             file.write( EID_Prefix + '  '+ '['+loc_num+',n,n,n,n,n,n,n,n,n,n,n,n]' + '  *  \n')
+             file.write( EID_Prefix + '  ' + '['+loc_num+',n,n,n,n,n,n,n,n,n,n,n,n]' + '  *\n') #\n
          elif resolver_num == 2:
-             file.write( EID_Prefix + '  '+ '[n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n]' + '  *  \n')
+             file.write( EID_Prefix + '  ' + '[n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n]' + '  *\n')
          elif resolver_num == 3:
-             file.write( EID_Prefix + '  '+ '[n,n,'+loc_num+',n,n,n,n,n,n,n,n,n,n]' + '  *  \n')
+             file.write( EID_Prefix + '  ' + '[n,n,'+loc_num+',n,n,n,n,n,n,n,n,n,n]' + '  *\n')
          elif resolver_num == 4:
-             file.write( EID_Prefix + '  '+ '[n,n,n,'+loc_num+',n,n,n,n,n,n,n,n,n]' + '  *  \n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,'+loc_num+',n,n,n,n,n,n,n,n,n]' + '  *\n')
          elif resolver_num == 5:
-             file.write( EID_Prefix + '  '+ '[n,n,n,n,'+loc_num+',n,n,n,n,n,n,n,n]' + '  *  \n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,n,'+loc_num+',n,n,n,n,n,n,n,n]' + '  *\n')
          elif resolver_num == 6:
-             file.write( EID_Prefix + '  '+ '[n,n,n,n,n,'+loc_num+',n,n,n,n,n,n,n]' + '  *  \n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,'+loc_num+',n,n,n,n,n,n,n]' + '  *\n')
          elif resolver_num == 7:
-             file.write( EID_Prefix + '  '+ '[n,n,n,n,n,n,'+loc_num+',n,n,n,n,n,n]' + '  *  \n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,'+loc_num+',n,n,n,n,n,n]' + '  *\n')
          elif resolver_num == 8:
-             file.write( EID_Prefix + '  '+ '[n,n,n,n,n,n,n,'+loc_num+',n,n,n,n,n]' + '  *  \n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,n,'+loc_num+',n,n,n,n,n]' + '  *\n')
          elif resolver_num == 9:
-             file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,'+loc_num+',n,n,n,n]' + '  *  \n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,'+loc_num+',n,n,n,n]' + '  *\n')
          elif resolver_num == 10:
-             file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,'+loc_num+',n,n,n]' + '  *  \n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,'+loc_num+',n,n,n]' + '  *\n')
          elif resolver_num == 11:
-             file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,'+loc_num+',n,n]' + '  *  \n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,'+loc_num+',n,n]' + '  *\n')
          elif resolver_num == 12:
-             file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,'+loc_num+',n]' + '  *  \n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,'+loc_num+',n]' + '  *\n')
          elif resolver_num == 13:
-             file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,'+loc_num+']' + '  *  \n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,'+loc_num+']' + '  *\n')
+
 
          file.close()
 
@@ -120,7 +129,7 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
             if len(info_2) != 0 and int(index/3) < len(info_2):
               if info[index+2] != '*' : # check if it's empty
                  if dst_EID in info[index+2]:
-                    dst_EID_num = info[index+2].count('|')+1
+                    dst_EID_num = info[index+2].count('|')
                     data = re.split(r"[\:\|\{\}]" , info[index+2]) # separete {dst_EID:[0,0,0,0]|dst_EID:[0,0,0,0]}
                     position = data.index(dst_EID)  # get the position of the dst_EID
                     reply_string = data[position+1]  # get the replies [0,0,0,..,0]
@@ -155,19 +164,25 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
                     data[position+1] = data_new
                     data_final_list = []
                     data_final_list.append('{')
-                    i = 1
-                    n = 0
-                    while i <= dst_EID_num :  # rewrite the information
-                        data_final_list.append(data[n:n+2])
+                    i = 0  #changet from 1
+                    n = 1  #changed from 0
+                    data_final_list.append(data[n:n + 2]) # added
+                    while i < dst_EID_num :  # rewrite the information
+                        n = n + 2
                         data_final_list.append('|')
-                        n = n+2
+                        data_final_list.append(data[n:n + 2])
                         i = i+1
-                    data_final_list.append('}\n')
+                    data_final_list.append('}')
                     data_final_string = ''.join(data_final_list[0])
                     info_2[int(index / 3)] = info_2[int(index / 3)].replace(info[index+2], data_final_string) # update the line
+
+                    file = open('summary/EID_list_' + str(Timestamp) + '.log', 'w+')
+                    file.writelines(info_2)
+                    file.close()
+                    break
                  else:
                     if resolver_num == 1 :
-                       data_new =  '|' + dst_EID + ':[' + loc_num +  ',n,n,n,n,n,n,n,n,n,n,n,n]' + '}\n' #\n
+                       data_new =  '|' + dst_EID + ':[' + loc_num +',n,n,n,n,n,n,n,n,n,n,n,n]' + '}\n' #\n
                     elif resolver_num == 2 :
                        data_new =  '|' + dst_EID + ':[' + 'n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n]' + '}\n'
                     elif resolver_num == 3 :
@@ -194,10 +209,15 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
                        data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,n,n,'+loc_num+']' + '}\n'
 
                     info_2[int(index / 3)] = info_2[int(index / 3)].replace('}\n', data_new)
-                 break
+
+                    file = open('summary/EID_list_' + str(Timestamp) + '.log', 'w+')
+                    file.writelines(info_2)
+                    file.close()
+                    break
               else:
+
                  if resolver_num == 1 :
-                    data_new = '{' + dst_EID + ':[' + loc_num +  ',n,n,n,n,n,n,n,n,n,n,n,n]' + '}' #\n
+                    data_new = '{' + dst_EID + ':[' + loc_num+',n,n,n,n,n,n,n,n,n,n,n,n]' + '}' #\n
                  elif resolver_num == 2 :
                     data_new = '{' + dst_EID + ':[' + 'n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n]' + '}'
                  elif resolver_num == 3 :
@@ -225,18 +245,21 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
 
                  info_2[int(index / 3)] = info_2[int(index / 3)].replace(info[index+2], data_new)
 
+                 file = open('summary/EID_list_' + str(Timestamp) + '.log', 'w+')
+                 file.writelines(info_2)
+                 file.close()
                  break
             else:
               file.close()
               continue
 
-         file = open('summary/EID_list_' + str(Timestamp) + '.log', 'w+')
-         file.writelines(info_2)
-         file.close()
+         #file = open('summary/EID_list_' + str(Timestamp) + '.log', 'w+')
+         #file.writelines(info_2)
+         #file.close()
 
        else:
          if resolver_num == 1 :
-            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + loc_num +  ',n,n,n,n,n,n,n,n,n,n,n,n]' + '}\n' )
+            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + loc_num +',n,n,n,n,n,n,n,n,n,n,n,n]' + '}\n' )
          elif resolver_num == 2 :
             file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n]' + '}\n' )
          elif resolver_num == 3 :
@@ -265,9 +288,12 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
          file.close()
 
  # Unlock the file (Flag = 0)
- #flag[1] = '0\n'
- #controller = open('controller.log', 'w+')
- #controller.writelines(flag)
- #controller.close()
+ try:
+   flag[1] = '0\n'
+   controller = open('controller.log', 'w+')
+   controller.writelines(flag)
+   controller.close()
+ except:
+     sys.exit()
 
 
