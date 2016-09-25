@@ -56,7 +56,9 @@ def eid_prefix_num_counter(start_date, stop_date):
                         print('HTTP Error 404: Not Found')
 
 
+
     print('eid_prefix_num_list =', eid_prefix_num_list)
+    return eid_prefix_num_list
 
 
 # To calculate the number of RLOC
@@ -68,7 +70,7 @@ def rloc_num_counter(start_date, stop_date):
             for day in day_list:
                 if int(start_date) <= int('{0}{1}{2}'.format(year, month, day)) <= int(stop_date):
                     target_url = 'http://lispmon.net/mappings/EID4_mappings_{0}{1}{2}.txt'.format(year, month, day)
-                    # print(target_url)
+                    print(target_url)
                     rloc_list = []
 
                     try:
@@ -90,6 +92,7 @@ def rloc_num_counter(start_date, stop_date):
 
     print('rloc_num_list =', rloc_num_list)
 
+    return rloc_num_list
 
 
 

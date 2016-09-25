@@ -22,6 +22,8 @@ import pandas as pd
 map_resolvers  = ['217.8.97.6', '217.8.98.42' , '193.162.145.50'   ,'149.20.48.61' , '149.20.48.77',  '206.223.132.89', '202.214.86.252' , '202.51.247.10' ] # 3*EURO
 #map_resolvers  = ['217.8.97.6',  '206.223.132.89', '202.214.86.252'  ]
 #'149.20.48.61' , '149.20.48.77', '202.51.247.10'
+x = [ 1 ,2 ,4 ]
+y = x.index(1)
 TSPs = []
 mapping_list = []
 table = open('Tables/' + map_resolvers[0] + '-LISP.csv', 'r')
@@ -31,6 +33,9 @@ for row in reader:
     for TSP in row:
         TSPs.append(datetime.datetime.fromtimestamp(int(TSP)))
     break
+
+
+
 
 Num_MR = len(map_resolvers)
 

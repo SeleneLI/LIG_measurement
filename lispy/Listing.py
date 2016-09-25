@@ -72,6 +72,8 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
                    data_old[23] = str(loc_num)  # insert the new value
                elif resolver_num == 13:
                    data_old[25] = str(loc_num)  # insert the new value
+               elif resolver_num == 14:
+                   data_old[27] = str(loc_num)  # insert the new value
                data_new=''.join(data_old) #convert the list to string '[0,-1,-1...]'
                info_2[int(index / 3)] = info_2[int(index / 3)].replace(data_old_string, data_new) # update the line
                break
@@ -87,31 +89,33 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
 
        else:
          if resolver_num == 1:
-             file.write( EID_Prefix + '  ' + '['+loc_num+',n,n,n,n,n,n,n,n,n,n,n,n]' + '  *\n') #\n
+             file.write( EID_Prefix + '  ' + '['+loc_num+',n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  *\n') #\n
          elif resolver_num == 2:
-             file.write( EID_Prefix + '  ' + '[n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n]' + '  *\n')
+             file.write( EID_Prefix + '  ' + '[n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n,n]' + '  *\n')
          elif resolver_num == 3:
-             file.write( EID_Prefix + '  ' + '[n,n,'+loc_num+',n,n,n,n,n,n,n,n,n,n]' + '  *\n')
+             file.write( EID_Prefix + '  ' + '[n,n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n]' + '  *\n')
          elif resolver_num == 4:
-             file.write( EID_Prefix + '  ' + '[n,n,n,'+loc_num+',n,n,n,n,n,n,n,n,n]' + '  *\n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,'+loc_num+',n,n,n,n,n,n,n,n,n,n]' + '  *\n')
          elif resolver_num == 5:
-             file.write( EID_Prefix + '  ' + '[n,n,n,n,'+loc_num+',n,n,n,n,n,n,n,n]' + '  *\n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,n,'+loc_num+',n,n,n,n,n,n,n,n,n]' + '  *\n')
          elif resolver_num == 6:
-             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,'+loc_num+',n,n,n,n,n,n,n]' + '  *\n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,'+loc_num+',n,n,n,n,n,n,n,n]' + '  *\n')
          elif resolver_num == 7:
-             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,'+loc_num+',n,n,n,n,n,n]' + '  *\n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,'+loc_num+',n,n,n,n,n,n,n]' + '  *\n')
          elif resolver_num == 8:
-             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,n,'+loc_num+',n,n,n,n,n]' + '  *\n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,n,'+loc_num+',n,n,n,n,n,n]' + '  *\n')
          elif resolver_num == 9:
-             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,'+loc_num+',n,n,n,n]' + '  *\n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,'+loc_num+',n,n,n,n,n]' + '  *\n')
          elif resolver_num == 10:
-             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,'+loc_num+',n,n,n]' + '  *\n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,'+loc_num+',n,n,n,n]' + '  *\n')
          elif resolver_num == 11:
-             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,'+loc_num+',n,n]' + '  *\n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,'+loc_num+',n,n,n]' + '  *\n')
          elif resolver_num == 12:
-             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,'+loc_num+',n]' + '  *\n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,'+loc_num+',n,n]' + '  *\n')
          elif resolver_num == 13:
-             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,'+loc_num+']' + '  *\n')
+             file.write( EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,'+loc_num+',n]' + '  *\n')
+         elif resolver_num == 14:
+             file.write(EID_Prefix  + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n,'+loc_num+']' + '  *\n')
 
 
          file.close()
@@ -160,6 +164,8 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
                         reply_list[23] = str(loc_num)  # insert the new value
                     elif resolver_num == 13:
                         reply_list[25] = str(loc_num)  # insert the new value
+                    elif resolver_num == 14:
+                        reply_list[27] = str(loc_num)  # insert the new value
                     data_new = ''.join(reply_list)
                     data[position+1] = data_new
                     data_final_list = []
@@ -182,31 +188,33 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
                     break
                  else:
                     if resolver_num == 1 :
-                       data_new =  '|' + dst_EID + ':[' + loc_num +',n,n,n,n,n,n,n,n,n,n,n,n]' + '}\n' #\n
+                       data_new =  '|' + dst_EID + ':[' + loc_num +',n,n,n,n,n,n,n,n,n,n,n,n,n]' + '}\n' #\n
                     elif resolver_num == 2 :
-                       data_new =  '|' + dst_EID + ':[' + 'n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n]' + '}\n'
+                       data_new =  '|' + dst_EID + ':[' + 'n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n,n]' + '}\n'
                     elif resolver_num == 3 :
-                       data_new =  '|' + dst_EID + ':[' + 'n,n,'+loc_num+',n,n,n,n,n,n,n,n,n,n]' + '}\n'
+                       data_new =  '|' + dst_EID + ':[' + 'n,n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n]' + '}\n'
                     elif resolver_num == 4 :
-                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,'+loc_num+',n,n,n,n,n,n,n,n,n]' + '}\n'
+                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,'+loc_num+',n,n,n,n,n,n,n,n,n,n]' + '}\n'
                     elif resolver_num == 5 :
-                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,'+loc_num+',n,n,n,n,n,n,n,n]' + '}\n'
+                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,'+loc_num+',n,n,n,n,n,n,n,n,n]' + '}\n'
                     elif resolver_num == 6 :
-                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,n,'+loc_num+',n,n,n,n,n,n,n]' + '}\n'
+                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,n,'+loc_num+',n,n,n,n,n,n,n,n]' + '}\n'
                     elif resolver_num == 7 :
-                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,n,n,'+loc_num+',n,n,n,n,n,n]' + '}\n'
+                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,n,n,'+loc_num+',n,n,n,n,n,n,n]' + '}\n'
                     elif resolver_num == 8 :
-                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,n,n,n,'+loc_num+',n,n,n,n,n]' + '}\n'
+                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,n,n,n,'+loc_num+',n,n,n,n,n,n]' + '}\n'
                     elif resolver_num == 9:
-                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,'+loc_num+',n,n,n,n]' + '}\n'
+                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,'+loc_num+',n,n,n,n,n]' + '}\n'
                     elif resolver_num == 10:
-                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,'+loc_num+',n,n,n]' + '}\n'
+                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,'+loc_num+',n,n,n,n]' + '}\n'
                     elif resolver_num == 11:
-                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,'+loc_num+',n,n]' + '}\n'
+                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,'+loc_num+',n,n,n]' + '}\n'
                     elif resolver_num == 12:
-                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,n,'+loc_num+',n]' + '}\n'
+                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,n,'+loc_num+',n,n]' + '}\n'
                     elif resolver_num == 13:
-                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,n,n,'+loc_num+']' + '}\n'
+                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,n,n,'+loc_num+',n]' + '}\n'
+                    elif resolver_num == 14:
+                       data_new =  '|' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,n,n,n,'+loc_num+']' + '}\n'
 
                     info_2[int(index / 3)] = info_2[int(index / 3)].replace('}\n', data_new)
 
@@ -217,31 +225,33 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
               else:
 
                  if resolver_num == 1 :
-                    data_new = '{' + dst_EID + ':[' + loc_num+',n,n,n,n,n,n,n,n,n,n,n,n]' + '}' #\n
+                    data_new = '{' + dst_EID + ':[' + loc_num+',n,n,n,n,n,n,n,n,n,n,n,n,n]' + '}' #\n
                  elif resolver_num == 2 :
-                    data_new = '{' + dst_EID + ':[' + 'n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n]' + '}'
+                    data_new = '{' + dst_EID + ':[' + 'n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n,n]' + '}'
                  elif resolver_num == 3 :
-                    data_new = '{' + dst_EID + ':[' + 'n,n,'+loc_num+',n,n,n,n,n,n,n,n,n,n]' + '}'
+                    data_new = '{' + dst_EID + ':[' + 'n,n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n]' + '}'
                  elif resolver_num == 4 :
-                    data_new = '{' + dst_EID + ':[' + 'n,n,n,'+loc_num+',n,n,n,n,n,n,n,n,n]' + '}'
+                    data_new = '{' + dst_EID + ':[' + 'n,n,n,'+loc_num+',n,n,n,n,n,n,n,n,n,n]' + '}'
                  elif resolver_num == 5 :
-                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,'+loc_num+',n,n,n,n,n,n,n,n]' + '}'
+                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,'+loc_num+',n,n,n,n,n,n,n,n,n]' + '}'
                  elif resolver_num == 6 :
-                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,n,'+loc_num+',n,n,n,n,n,n,n]' + '}'
+                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,n,'+loc_num+',n,n,n,n,n,n,n,n]' + '}'
                  elif resolver_num == 7 :
-                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,n,n,'+loc_num+',n,n,n,n,n,n]' + '}'
+                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,n,n,'+loc_num+',n,n,n,n,n,n,n]' + '}'
                  elif resolver_num == 8 :
-                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,'+loc_num+',n,n,n,n,n]' + '}'
+                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,'+loc_num+',n,n,n,n,n,n]' + '}'
                  elif resolver_num == 9:
-                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,'+loc_num+',n,n,n,n]' + '}'
+                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,'+loc_num+',n,n,n,n,n]' + '}'
                  elif resolver_num == 10:
-                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,'+loc_num+',n,n,n]' + '}'
+                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,'+loc_num+',n,n,n,n]' + '}'
                  elif resolver_num == 11:
-                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,'+loc_num+',n,n]' + '}'
+                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,'+loc_num+',n,n,n]' + '}'
                  elif resolver_num == 12:
-                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,n,'+loc_num+',n]' + '}'
+                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,n,'+loc_num+',n,n]' + '}'
                  elif resolver_num == 13:
-                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,n,n,'+loc_num+']' + '}'
+                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,n,n,'+loc_num+',n]' + '}'
+                 elif resolver_num == 14:
+                    data_new = '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,n,n,n,'+loc_num+']' + '}'
 
                  info_2[int(index / 3)] = info_2[int(index / 3)].replace(info[index+2], data_new)
 
@@ -259,31 +269,33 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
 
        else:
          if resolver_num == 1 :
-            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + loc_num +',n,n,n,n,n,n,n,n,n,n,n,n]' + '}\n' )
+            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + loc_num +',n,n,n,n,n,n,n,n,n,n,n,n,n]' + '}\n' )
          elif resolver_num == 2 :
-            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n]' + '}\n' )
+            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n,n]' + '}\n' )
          elif resolver_num == 3 :
-            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,'+loc_num+',n,n,n,n,n,n,n,n,n,n]' + '}\n' )
+            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n]' + '}\n' )
          elif resolver_num == 4 :
-            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,'+loc_num+',n,n,n,n,n,n,n,n,n]' + '}\n' )
+            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,'+loc_num+',n,n,n,n,n,n,n,n,n,n]' + '}\n' )
          elif resolver_num == 5 :
-            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,'+loc_num+',n,n,n,n,n,n,n,n]' + '}\n' )
+            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,'+loc_num+',n,n,n,n,n,n,n,n,n]' + '}\n' )
          elif resolver_num == 6 :
-            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,n,'+loc_num+',n,n,n,n,n,n,n]' + '}\n' )
+            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,n,'+loc_num+',n,n,n,n,n,n,n,n]' + '}\n' )
          elif resolver_num == 7 :
-            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,n,n,'+loc_num+',n,n,n,n,n,n]' + '}\n' )
+            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,n,n,'+loc_num+',n,n,n,n,n,n,n]' + '}\n' )
          elif resolver_num == 8 :
-            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,'+loc_num+',n,n,n,n,n]' + '}\n' )
+            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,'+loc_num+',n,n,n,n,n,n]' + '}\n' )
          elif resolver_num == 9:
-            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,'+loc_num+',n,n,n,n]' + '}\n')
+            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,'+loc_num+',n,n,n,n,n]' + '}\n')
          elif resolver_num == 10:
-            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,'+loc_num+',n,n,n]' + '}\n')
+            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,'+loc_num+',n,n,n,n]' + '}\n')
          elif resolver_num == 11:
-            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,'+loc_num+',n,n]' + '}\n')
+            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,'+loc_num+',n,n,n]' + '}\n')
          elif resolver_num == 12:
-            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,n,'+loc_num+',n]' + '}\n')
+            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,n,'+loc_num+',n,n]' + '}\n')
          elif resolver_num == 13:
-            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,n,n,'+loc_num+']' + '}\n')
+            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,n,n,'+loc_num+',n]' + '}\n')
+         elif resolver_num == 14:
+            file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + 'n,n,n,n,n,n,n,n,n,n,n,n,n,'+loc_num+']' + '}\n')
 
          file.close()
 
