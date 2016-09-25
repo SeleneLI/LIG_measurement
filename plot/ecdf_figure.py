@@ -11,7 +11,7 @@ from matplotlib.legend_handler import HandlerLine2D
 from statsmodels.distributions.empirical_distribution import ECDF
 from config.config import *
 
-
+FIGURE_PATH = os.path.join('Figures')
 
 map_resolvers  = ['217.8.97.6', '217.8.98.42' , '193.162.145.50' , '149.20.48.61' , '149.20.48.77' , '206.223.132.89' , '202.214.86.252' , '202.51.247.10'] # 3*EURO
 Negative_RTTs = []
@@ -107,7 +107,8 @@ ecdf_overall = ECDF(overall_RTTs)
 mpl.rcParams['text.usetex'] = True
 mpl.rcParams.update({'figure.autolayout': True})
 
-negative , =plt.plot(ecdf_negative.x , ecdf_negative.y  , 'r-' , label = 'Negative Map-Reply' )
+# you can use "linewidth" to modify the width of line
+negative , =plt.plot(ecdf_negative.x , ecdf_negative.y  , 'r-' , label = 'Negative Map-Reply', linewidth = 5 )
 answered , =plt.plot(ecdf_lisp.x , ecdf_lisp.y , 'g--' , label = 'LISP Map-Reply')
 overall ,  =plt.plot(ecdf_overall.x , ecdf_overall.y , 'b-.'  , label = 'overall')
 plt.legend(handler_map={negative : HandlerLine2D(numpoints=1)})
@@ -120,6 +121,12 @@ plt.xlabel('rtt(ms)', fontLabel)
 plt.ylabel('ecdf', fontLabel)
 plt.xticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
 plt.yticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
-plt.show()
+# To check if the Figures path exists, otherise we create one
+try:
+    os.stat(os.path.join(FIGURE_PATH))
+except:
+    os.makedirs(os.path.join(FIGURE_PATH))
+plt.savefig(os.path.join(FIGURE_PATH, 'ecdf_of_RTT.eps'), dpi=300, transparent=True) # you can change the name, just an example
+plt.show() # When you use the above command to save the figure, you can choose to don't show the figure anymore
 
 sys.exit()
