@@ -15,6 +15,8 @@ import urllib.request
 
 # Plot part
 
+FIGURE_PATH = os.path.join('Figures')
+
 fontLabel = {
     'fontname'   : 'Times New Roman',
     'color'      : 'k',

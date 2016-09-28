@@ -71,28 +71,35 @@ del TSPs[15]
 
 dates = matplotlib.dates.date2num(TSPs)
 
+plt.figure(figsize=(20, 9))  # adjust the size of the figure
 # Plot the LISP reply for Map resolvers
 for x in range(0 , len(map_resolvers)) :
     del mapping_lists[x][14]
     del mapping_lists[x][15]
-    plt.plot_date(dates, mapping_lists[x]  , ls= '-' , marker='')
+    plt.plot_date(dates, mapping_lists[x]  , ls= '-' , marker='' , label = 'MR ' + str(x+1))
 
 #Plot the LISP Reply for LISPmon
-plt.plot_date(dates, mapping_list_LISPmon, ls='-', marker='')
+plt.plot_date(dates, mapping_list_LISPmon, ls='-', marker='' , label = 'LISPmon')
 
 #Setting
 
 # To automatically produce the size of the figure
-#mpl.rcParams['text.usetex'] = True
-#mpl.rcParams.update({'figure.autolayout': True})
+mpl.rcParams['text.usetex'] = True
+mpl.rcParams.update({'figure.autolayout': True})
 plt.grid(True)
 plt.axis([ min(dates) , max(dates)  , 0 , 100 ])
 plt.xlabel('Time')
-plt.ylabel(' # RLOCs ')
+plt.ylabel(' Number of RLOCs ')
+plt.legend( bbox_to_anchor=(1.01, 1.), loc=2, borderaxespad=0.)
 plt.gcf().autofmt_xdate()
 #plt.xticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
 #plt.yticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
 
-plt.show()
+try:
+    os.stat(os.path.join(FIGURE_PATH))
+except:
+    os.makedirs(os.path.join(FIGURE_PATH))
+plt.savefig(os.path.join(FIGURE_PATH, 'Mapping_RLOCs.eps'), dpi=300,transparent=True)  # you can change the name, just an example
+plt.show()  # When you use the above command to save the figure, you can choose to don't show the figure anymore
 
 sys.exit()

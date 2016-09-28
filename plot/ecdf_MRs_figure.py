@@ -102,6 +102,9 @@ for x in range(0 , len(map_resolvers)):
     answered , =  plt.plot(ecdf_lisp[x].x , ecdf_lisp[x].y  , label = 'LISP Map-Reply')
     overall ,  =  plt.plot(ecdf_overall[x].x , ecdf_overall[x].y   , label = 'overall')
 
+    # To automatically produce the size of the figure
+    mpl.rcParams['text.usetex'] = True
+    mpl.rcParams.update({'figure.autolayout': True})
 
     plt.legend(handler_map={negative : HandlerLine2D(numpoints=1)})
     plt.legend(handler_map={answered : HandlerLine2D(numpoints=1)})
@@ -112,6 +115,15 @@ for x in range(0 , len(map_resolvers)):
     plt.grid(True)
     plt.xlabel('rtt(ms)')
     plt.ylabel('ecdf')
-    plt.show()
+    plt.xticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
+    plt.yticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
+    # To check if the Figures path exists, otherise we create one
+    try:
+        os.stat(os.path.join(FIGURE_PATH))
+    except:
+        os.makedirs(os.path.join(FIGURE_PATH))
+    plt.savefig(os.path.join(FIGURE_PATH, 'ecdf_of_RTT_MR#'+str(x+1)+'.eps'), dpi=300,
+                transparent=True)  # you can change the name, just an example
+    plt.show()  # When you use the above command to save the figure, you can choose to don't show the figure anymore
 
 sys.exit()

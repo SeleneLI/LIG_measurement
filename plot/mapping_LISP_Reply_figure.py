@@ -37,12 +37,16 @@ for row in reader:
 
 # Obtainning the Information from '-LISP.csv'
 mapping_lists = []
+mapping_overall = []
+MR_counter = 0
 for map_resolver in map_resolvers:
    counter_TSP = 0
    mapping_list = []
+
    while counter_TSP < len(TSPs):
        print(counter_TSP)
        counter_mapping = 0
+       x = []
        table = open('../Tables/' + map_resolver + '-LISP.csv', 'r')
        reader = csv.reader(table)
        for row in reader:
@@ -52,11 +56,19 @@ for map_resolver in map_resolvers:
            #del row[0]
            if row[TSP_position] != '' :
                counter_mapping += 1
+               if MR_counter == 0 :
+                   x.append(row[0])
+               else:
+                   if row[0] not in mapping_overall[counter_TSP] :
+                       mapping_overall[counter_TSP].append(row[0])
+
        counter_TSP +=1
-
        mapping_list.append(counter_mapping)
-
+       if MR_counter == 0 :
+            mapping_overall.append(x)
    mapping_lists.append(mapping_list)
+   MR_counter += 1
+
 
 
 # Getting the Number of LISP Reply from LISPmon
@@ -67,29 +79,52 @@ del TSPs[15]
 
 # plot
 
-dates = matplotlib.dates.date2num(TSPs)
+dates = matplotlib.dates.date2num(TSPs)  # let the Timestamps readable
 
+plt.figure(figsize=(20, 9))  # adjust the size of the figure
 # Plot the LISP reply for Map resolvers
+
 for x in range(0 , len(map_resolvers)) :
     del mapping_lists[x][14]
     del mapping_lists[x][15]
-    plt.plot_date(dates, mapping_lists[x]  , ls= '-' , marker='')
+    plt.plot_date(dates, mapping_lists[x]  , ls= '-' , marker='' , label = 'MR ' + str(x+1) )
 
 #Plot the LISP Reply for LISPmon
-plt.plot_date(dates, mapping_list_LISPmon, ls='-', marker='')
+plt.plot_date(dates, mapping_list_LISPmon, ls='-', marker='' , label = 'LISPmon' , linewidth= 2)
+
+
+#Plot the overall LISP Replies
+mapping_overall_number = []
+for x in mapping_overall:
+    mapping_overall_number.append(len(x)-1)
+
+del mapping_overall_number[14]
+del mapping_overall_number[15]
+plt.plot_date(dates, mapping_overall_number, ls='-', marker='' , label = 'overall' , linewidth= 2)
+
 
 #Setting
 
 # To automatically produce the size of the figure
-#mpl.rcParams['text.usetex'] = True
-#mpl.rcParams.update({'figure.autolayout': True})
+
+mpl.rcParams['text.usetex'] = True
+mpl.rcParams.update({'figure.autolayout': True})
 plt.grid(True)
 plt.axis([ min(dates) , max(dates)  , 0 , 100 ])
 plt.xlabel('Time')
-plt.ylabel(' # LISP mappings ')
+plt.ylabel(' number of LISP mappings ')
+lgd = plt.legend( bbox_to_anchor=(1.01, 1.), loc=2, borderaxespad=0.)
 plt.gcf().autofmt_xdate()
+
 #plt.xticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
 #plt.yticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
+# To check if the Figures path exists, otherise we create one
+try:
+    os.stat(os.path.join(FIGURE_PATH))
+except:
+    os.makedirs(os.path.join(FIGURE_PATH))
+plt.savefig(os.path.join(FIGURE_PATH, 'LISP_Replies.eps'), dpi=300, transparent=True , bbox_extra_artists=(lgd) ) # you can change the name, just an example
+plt.show() # When you use the above command to save the figure, you can choose to don't show the figure anymore
 
 plt.show()
 
