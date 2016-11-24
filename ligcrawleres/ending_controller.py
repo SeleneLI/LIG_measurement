@@ -13,7 +13,7 @@ controller.close()
 
 os.remove('controller.log')
 
-Time =  1*60 #(5*60*60)+(58*60)
+Time =  1*60
 time.sleep(Time)
 
 # Copy the EIDs_Prefix list

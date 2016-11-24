@@ -6,21 +6,43 @@ from config.config import *
 
 
 
-map_resolvers  = ['217.8.97.6', '217.8.98.42' , '193.162.145.50' , '149.20.48.61' , '149.20.48.77' , '206.223.132.89' , '202.214.86.252' , '202.51.247.10'] # 3*EURO
-MRs = [ 1 ,2 ,3 ,4 , 5 , 6 ,7 ,8 ]
+map_resolvers  = ['217.8.97.6' , '217.8.98.42' , '193.162.145.50' , '206.223.132.89' , '202.214.86.252' , '202.51.247.10'] # 3*EURO
+#'149.20.48.61' , '149.20.48.77'
+start_date = '20160904'
+end_date   = '20161004'
+
+# Obtaining the Timestamps
+TSPs = []
+
+table = open('../Tables/' + map_resolvers[0] + '-Negative.csv', 'r')
+reader = csv.reader(table)
+for row in reader:
+    del row[0]
+    for TSP in row:
+        Date = datetime.datetime.fromtimestamp(int(TSP))
+        Date.timestamp()
+        Date_str = str(Date.year)+str('%02d'%Date.month)+str('%02d'%Date.day)
+        if int(start_date) <= int(Date_str) <= int(end_date) :
+            TSPs.append(TSP)  #datetime.datetime.fromtimestamp(int(TSP))
+    break
+
+MRs = [ 1 ,2 ,3 ,4 , 5 , 6]
 map_replies_answers = []
 for map_resolver in map_resolvers:
    No_answer_counter = 0
    row_counter = 0
-   #table = open('test.csv', 'r')
+
    table = open('../Tables/'+map_resolver+'-Negative-LISP.csv', 'r')
    reader = csv.reader(table)
    row_medians = []
    for row in reader:
        if row[0] == '':
+           Start_position = row.index(TSPs[0])
+           End_position = row.index(TSPs[len(TSPs)-1]) + 1
            del row[0]
-           TSPs_len = len(row)
+           TSPs_len = len(TSPs)
            continue
+       row = row[Start_position : End_position]
        No_answer_counter = No_answer_counter + row.count('')
        row_counter = row_counter +1
 
@@ -36,18 +58,17 @@ for map_resolver in map_resolvers:
 mpl.rcParams['text.usetex'] = True
 mpl.rcParams.update({'figure.autolayout': True})
 
-overall , =plt.plot(MRs , map_replies_answers  , 'ro' , label = 'Two weeks' )
-plt.legend(handler_map={overall: HandlerLine2D(numpoints=1)})
-plt.legend(handles=[overall], loc=4)
-plt.axis([ 0 , 9 , 0 , 100])
+overall , =plt.plot(MRs , map_replies_answers  , 'ro' , label = 'one month' , ms=10)
+
+plt.axis([ 0 , 7 , 0 , 100])
 plt.grid(True)
-plt.xlabel('resolver')
-plt.ylabel('Map Replies Answers ')
+plt.xlabel('Map Resolver' , fontsize=25)
+plt.ylabel('Map Replies Answers \%' , fontsize=25)
 plt.axvline(x= 3.5, color = 'k', linewidth = 1)
-plt.axvline(x= 6.5, color = 'k', linewidth = 1)
+plt.axvline(x= 4.5, color = 'k', linewidth = 1)
 plt.text( 1, 90, 'EUROPE', style='italic' , fontsize=20)
-plt.text( 4.5, 90, 'US', style='italic' , fontsize=20)
-plt.text( 7.5, 90, 'ASIA', style='italic' , fontsize=20)
+plt.text( 3.7, 90, 'US', style='italic' , fontsize=20)
+plt.text( 5.5, 90, 'ASIA', style='italic' , fontsize=20)
 plt.xticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
 plt.yticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
 # To check if the Figures path exists, otherise we create one

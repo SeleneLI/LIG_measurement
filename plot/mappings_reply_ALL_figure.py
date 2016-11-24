@@ -102,8 +102,6 @@ for map_resolver in map_resolvers:
    plt.ylabel('  mappings  ')
    plt.gcf().autofmt_xdate()
 
-   # plt.xticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
-   # plt.yticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
 
    try:
        os.stat(os.path.join(FIGURE_PATH))

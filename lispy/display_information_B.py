@@ -10,12 +10,14 @@ import os
 
 def display( reply , reply_type  , dst_EID , map_resolver , my_ip , rtt , sender_addr , Timestamp ):
 
-
+   #Checking the existing of the director
    try:
         os.stat(os.path.join('/home/crawler/data/' + map_resolver))
    except:
         os.makedirs(os.path.join('/home/crawler/data/' + map_resolver))
 
+
+   # Setting the log file
    file = logging.getLogger(dst_EID + '-' + map_resolver)
    formatter = logging.Formatter(' %(message)s')
    if reply_type == 0:
@@ -33,7 +35,7 @@ def display( reply , reply_type  , dst_EID , map_resolver , my_ip , rtt , sender
    # LISP reply
    if reply_type == 1 :
 
-
+      # The content of the LISP Map-Reply
       logging.info('------------------------------------------------------------------->')
       for num_records in range(len(reply.records)):
 
@@ -62,7 +64,7 @@ def display( reply , reply_type  , dst_EID , map_resolver , my_ip , rtt , sender
    # Negative reply
    elif reply_type == -1 :
 
-
+      # The content of the Negative Map-Reply
       logging.info('------------------------------------------------------------------->')
       for num_loc_records in range(len(reply.records[0].locator_records)+1):
 
@@ -84,6 +86,7 @@ def display( reply , reply_type  , dst_EID , map_resolver , my_ip , rtt , sender
 
    # Timeout
    elif reply_type == 0 :
+       # the content of the No Map-Reply
        file.info('------------------------------------------------------------------->')
        file.info('Date:' + time.strftime(' %l:%M%p  on %b %d, %Y'))
        file.info('EID=' + dst_EID)

@@ -5,11 +5,16 @@ import glob
 import ipaddress
 from ipaddress import IPv4Address, IPv4Network
 
+
+# List of the Map Resolver which will be measured
 map_resolvers  = ['217.8.97.6', '217.8.98.42' , '193.162.145.50' , '149.20.48.61' , '149.20.48.77' , '206.223.132.89' , '202.214.86.252' , '202.51.247.10'] # 3*EUROP , 3*US , 2*ASIA
 
+
+# Getting the Timestamp
 list_TSP = open('Timestamp_list.log' , 'r')
 TSPs_list = list_TSP.readlines()
 TSPs = []
+# the Start and End Timestamp which you want to set the interval
 TSP_Start = ''
 TSP_END = ''
 Interval = False
@@ -30,6 +35,7 @@ else:
 
 TSPs_table = [[''] + TSPs]
 print(len(TSPs))
+# collecting the data for each Map Resolver
 for map_resolver in map_resolvers:
    table = []
    counter_TSP = 1
@@ -82,6 +88,7 @@ for map_resolver in map_resolvers:
        row[0] = str(row[0])
        table[index] = row
 
+   # Write the collected data for the LISP Map-Reply in '-LISP.csv'
    with open('Tables/'+str(map_resolver)+'-LISP-#RLOCs.csv', 'w', newline='') as fp:
        a = csv.writer(fp, delimiter=',')
        a.writerows(table)

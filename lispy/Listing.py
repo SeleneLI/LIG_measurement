@@ -3,7 +3,7 @@ import ipaddress
 import re
 import sys
 
-
+# The arguments ( destination EID , EID prefix , the numebr of locators , Timestamp , the Map Resolver Number)
 def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
 
  # Wait until to get the pirmission to write in the file (Flag = 0 )
@@ -15,8 +15,7 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
      if len(flag) != 0:
         if flag[1] == '1\n':
            controller.close()
-           #controller = open('controller.log', 'r+')
-           #flag = controller .readlines()
+
         else:
             break
      else:
@@ -33,11 +32,36 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
 
      sys.exit()
 
+# -------------------------------  EID List Format -------------------------------------------------------
+
+#------------------------------|------------------------------------------| ------------------------------------------------------------------------------------------------|
+# EID Prefix                   |   Map Resolver Reply List                |   Map Resolver Reply List for the destination EID which doesn't belong to the EID Prefix        |
+#------------------------------|------------------------------------------| ------------------------------------------------------------------------------------------------|
+
+
+
+# ------------------------------- Examples ---------------------------------
+# Example with the existing of the third Field
+# 199.212.64.0/19  [n,n,n,0,n,n,n,n,n,n,n,n,n,n]  {153.16.29.33:[n,n,n,n,n,n,1,n,n,n,n,n,n,n]}
+# 153.16.25.176/28  [n,n,n,1,n,1,1,1,n,n,1,1,n]  {153.16.25.193:[n,n,n,n,n,n,1,n,n,n,n,n,n]|153.16.25.209:[n,n,n,n,n,n,n,n,n,n,n,1,n]}
+# Some Description:
+# '|' = Separate the destination EIDs
+# 'n' = No Map-Reply
+
+# Example without the existing of the third Field
+# 153.16.29.32/28  [n,n,n,1,n,n,n,n,n,n,n,n,n,n]  *
+# '*' = Empty field
+
+#----------------------------------------------------------------------------
+
+
+
  # check if the destination EID belong to the EID_Prefix
  if ipaddress.ip_address(dst_EID) in ipaddress.ip_network(EID_Prefix) :
 
        file= open('summary/EID_list_'+ str(Timestamp) +'.log' , 'r+')
        info = file.read().split()
+       # EID Prefix is already exsit in the list
        if EID_Prefix in info :
          index = info.index(EID_Prefix)
          while True:
@@ -86,10 +110,11 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
          file.close()
 
 
-
+       # EID Prefix is not in the List
        else:
+         #Write the RLOC number in the field specified for the Map Resolver
          if resolver_num == 1:
-             file.write( EID_Prefix + '  ' + '['+loc_num+',n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  *\n') #\n
+             file.write( EID_Prefix + '  ' + '['+loc_num+',n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  *\n')
          elif resolver_num == 2:
              file.write( EID_Prefix + '  ' + '[n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n,n]' + '  *\n')
          elif resolver_num == 3:
@@ -121,10 +146,12 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
          file.close()
 
 
+# The destination EID doesn't belong to the EID_Prefix
  else:
 
        file = open('summary/EID_list_' + str(Timestamp) + '.log', 'r+')
        info = file.read().split()
+       # EID Prefix already exist in the List
        if EID_Prefix in info:
          index = info.index(EID_Prefix)
          while True :
@@ -132,6 +159,7 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
             info_2 = file.readlines()
             if len(info_2) != 0 and int(index/3) < len(info_2):
               if info[index+2] != '*' : # check if it's empty
+                 # the destination EID is already exist in the field
                  if dst_EID in info[index+2]:
                     dst_EID_num = info[index+2].count('|')
                     data = re.split(r"[\:\|\{\}]" , info[index+2]) # separete {dst_EID:[0,0,0,0]|dst_EID:[0,0,0,0]}
@@ -170,8 +198,8 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
                     data[position+1] = data_new
                     data_final_list = []
                     data_final_list.append('{')
-                    i = 0  #changet from 1
-                    n = 1  #changed from 0
+                    i = 0
+                    n = 1
                     data_final_list.append(data[n:n + 2]) # added
                     while i < dst_EID_num :  # rewrite the information
                         n = n + 2
@@ -186,9 +214,12 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
                     file.writelines(info_2)
                     file.close()
                     break
+                 # the destination EID is not in the field
                  else:
+                     # Write the RLOC number in the field specified for the Map Resolver
+                     # separating the destination EIDs by '|'
                     if resolver_num == 1 :
-                       data_new =  '|' + dst_EID + ':[' + loc_num +',n,n,n,n,n,n,n,n,n,n,n,n,n]' + '}\n' #\n
+                       data_new =  '|' + dst_EID + ':[' + loc_num +',n,n,n,n,n,n,n,n,n,n,n,n,n]' + '}\n'
                     elif resolver_num == 2 :
                        data_new =  '|' + dst_EID + ':[' + 'n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n,n]' + '}\n'
                     elif resolver_num == 3 :
@@ -222,10 +253,12 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
                     file.writelines(info_2)
                     file.close()
                     break
+              # The field is emplty '*'
               else:
-
+                  # Add a destination EID and remove '*'
+                  # Write the RLOC number in the field specified for the Map Resolver
                  if resolver_num == 1 :
-                    data_new = '{' + dst_EID + ':[' + loc_num+',n,n,n,n,n,n,n,n,n,n,n,n,n]' + '}' #\n
+                    data_new = '{' + dst_EID + ':[' + loc_num+',n,n,n,n,n,n,n,n,n,n,n,n,n]' + '}'
                  elif resolver_num == 2 :
                     data_new = '{' + dst_EID + ':[' + 'n,'+loc_num+',n,n,n,n,n,n,n,n,n,n,n,n]' + '}'
                  elif resolver_num == 3 :
@@ -263,11 +296,10 @@ def lister ( dst_EID , EID_Prefix , loc_num ,  Timestamp , resolver_num):
               file.close()
               continue
 
-         #file = open('summary/EID_list_' + str(Timestamp) + '.log', 'w+')
-         #file.writelines(info_2)
-         #file.close()
 
+       # the EID Prefix is not exist in the LIst
        else:
+           # Write the RLOC number in the field specified for the Map Resolver
          if resolver_num == 1 :
             file.write(EID_Prefix + '  ' + '[n,n,n,n,n,n,n,n,n,n,n,n,n,n]' + '  ' + '{' + dst_EID + ':[' + loc_num +',n,n,n,n,n,n,n,n,n,n,n,n,n]' + '}\n' )
          elif resolver_num == 2 :

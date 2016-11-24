@@ -92,8 +92,7 @@ plt.xlabel('Time')
 plt.ylabel(' Number of RLOCs ')
 plt.legend( bbox_to_anchor=(1.01, 1.), loc=2, borderaxespad=0.)
 plt.gcf().autofmt_xdate()
-#plt.xticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
-#plt.yticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
+
 
 try:
     os.stat(os.path.join(FIGURE_PATH))

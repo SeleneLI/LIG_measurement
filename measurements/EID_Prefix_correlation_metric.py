@@ -13,9 +13,10 @@ from scipy.stats.stats import pearsonr
 
 
 
-
+# List of the Map Resolver which will be measured
 map_resolvers  = ['217.8.97.6', '217.8.98.42' , '193.162.145.50' , '149.20.48.61' , '149.20.48.77' , '206.223.132.89' , '202.214.86.252' , '202.51.247.10'] # 3*EURO
 
+# Get the Timesstamp from Tables directory
 TSPs = []
 mapping_list = []
 table = open('Tables/' + map_resolvers[0] + '-LISP.csv', 'r')

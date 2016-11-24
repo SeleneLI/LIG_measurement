@@ -19,9 +19,6 @@ def scan( Name , Timestamp , list_EIDs_Prefix, map_resolver , replies , reply_po
     print('Thread ' + Name + ' started ' + time.strftime(' %a , %l:%M%p %z on %b %d, %Y')) # ' 1:36PM EST on Oct 18, 2010'
 
 
-    # Getting random port number
-    #port_source = random.choice(range(MIN_EPHEMERAL_PORT, 65535))
-
     reply_counter = 0
     for dst_EID_Prefix in list_EIDs_Prefix:
       list_replies  = list(replies[reply_counter])
@@ -41,9 +38,9 @@ def scan( Name , Timestamp , list_EIDs_Prefix, map_resolver , replies , reply_po
             eid_addr = socket.getaddrinfo( dst_EID, 0, 0, 0, socket.SOL_UDP)
 
         except:
-            # print('ERROR: invalid addresses')
+
              continue
-             #sys.exit()
+
 
 
         # Converting ip string TO IPV4/6Address object
@@ -159,7 +156,7 @@ if __name__ == '__main__':
 
 
 
-
+      # Scanning the the EID list for each Map Resolver (14 Map Resolver)
       t1 = Thread(target=scan, args=('Thread1', Timestamp , list_EIDs_Prefix , str('149.20.48.77') , replies , 1 , port_source))
       t2 = Thread(target=scan, args=('Thread2', Timestamp , list_EIDs_Prefix , str('149.20.48.61') , replies , 3 ,port_source +1))
       t3 = Thread(target=scan, args=('Thread3', Timestamp , list_EIDs_Prefix , str('198.6.255.40') , replies , 5 , port_source+2))

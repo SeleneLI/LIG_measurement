@@ -21,7 +21,6 @@ LISP_RTTs_list = []
 overall_RTTs_list = []
 
 for map_resolver in map_resolvers:
-  # table = open('test.csv', 'r')
    Negative_RTTs = []
    LISP_RTTs = []
    overall_RTTs = []
@@ -110,11 +109,11 @@ for x in range(0 , len(map_resolvers)):
     plt.legend(handler_map={answered : HandlerLine2D(numpoints=1)})
     plt.legend(handler_map={overall: HandlerLine2D(numpoints=1)})
     plt.legend(handles=[negative , answered, overall], loc=4)
-    plt.title(map_resolvers[x])
-    plt.axis([ 0 , 5000 , 0 , 1])
+   # plt.title(map_resolvers[x])
+    plt.axis([ 0 , 3000 , 0 , 1])
     plt.grid(True)
-    plt.xlabel('rtt(ms)')
-    plt.ylabel('ecdf')
+    plt.xlabel('RTT(ms)' , fontsize=25)
+    plt.ylabel('ECDF' , fontsize=25)
     plt.xticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
     plt.yticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
     # To check if the Figures path exists, otherise we create one
@@ -122,7 +121,7 @@ for x in range(0 , len(map_resolvers)):
         os.stat(os.path.join(FIGURE_PATH))
     except:
         os.makedirs(os.path.join(FIGURE_PATH))
-    plt.savefig(os.path.join(FIGURE_PATH, 'ecdf_of_RTT_MR#'+str(x+1)+'.eps'), dpi=300,
+    plt.savefig(os.path.join(FIGURE_PATH, 'ecdf_of_RTT_MR_'+str(x+1)+'.eps'), dpi=300,
                 transparent=True)  # you can change the name, just an example
     plt.show()  # When you use the above command to save the figure, you can choose to don't show the figure anymore
 

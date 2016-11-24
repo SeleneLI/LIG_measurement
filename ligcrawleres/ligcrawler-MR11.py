@@ -17,20 +17,16 @@ def scan( Name , Start , End , Timestamp ,port_source):
 
     map_resolver = str('202.214.86.252')
 
-    # Display the starting Time
+    # Display the starting Time for the Thread
     print('Thread ' + Name + ' started ' + time.strftime(' %a , %l:%M%p %z on %b %d, %Y')) # ' 1:36PM EST on Oct 18, 2010'
 
     i=1
-    # Getting random port number
-    #port_source = random.choice(range(MIN_EPHEMERAL_PORT, 65535))
+    # Start sending the Map-Request from the Start address --> the End address
     while ipaddress.ip_address(Start) <= ipaddress.ip_address(End):
-
+        # Check if the the file controller.log is still exist
         try:
            open('controller.log', 'r+')
-           #flag = controller .readlines()
-           #if len(flag) != 0:
-           #   if flag[2] == 'stop\n':
-           #       sys.exit()
+
         except:
             print(map_resolver + 'have been stopped')
             sys.exit()
@@ -92,8 +88,7 @@ def scan( Name , Start , End , Timestamp ,port_source):
             rtt = (after - before)* 1000
 
         except socket.timeout:
-            #display_information.display(None , 0, Start, map_resolver, ip_my , Timestamp=Timestamp , rtt= None , sender_addr= None , resolver_num=12  )
-            #print('processing ' + map_resolver + '  '+ Name + '...' +  Start)
+
             nextint = int(ipaddress.IPv4Address(Start)) + 1
             if nextint <= int(ipaddress.IPv4Address(End)):
                 Start= str(ipaddress.IPv4Address(nextint))
@@ -108,11 +103,11 @@ def scan( Name , Start , End , Timestamp ,port_source):
         # LISP Map Reply, there are records
         if len(map_reply.records[0].locator_records) != 0:
             display_information.display(map_reply , 1 , Start , map_resolver , ip_my , rtt , sender_addr , Timestamp , resolver_num=12 )
-           # print('processing ' + map_resolver + '  ' + Name + '...' + Start)
+
         # negative Map Reply
         else:
             display_information.display(map_reply, -1, Start , map_resolver , ip_my , rtt , sender_addr , Timestamp  , resolver_num=12)
-            #print('processing ' + map_resolver + '  ' + Name + '...' + Start)
+
         #incrementation adresse IP
         network= ipaddress.ip_network(str(map_reply.records[0].eid_prefix))
         a = network.num_addresses
@@ -122,7 +117,7 @@ def scan( Name , Start , End , Timestamp ,port_source):
            i = i+1
         else:
             break
-
+    # Display the ending  Time for the Thread
     print(time.strftime(' %a , %l:%M%p %z on %b %d, %Y')) # ' 1:36PM EST on Oct 18, 2010'
     print ('scanning done  ' + map_resolver + '  '+ Name)
 
@@ -130,15 +125,15 @@ if __name__ == '__main__':
     try:
       time.sleep(120)
       Threads = []
-      port_source = 33868#36168
+      port_source = 33868
       #Get Timestamp
       controller = open('controller.log' , 'r')
       Timestamp = controller.readline().strip('\n')
 
-      #create the EID_Prefix list
-      #list = open('EID_list_' + str(Timestamp) + '.log', 'w+')
+
 
       # Scanning the IPs from 0.0.0.0 to 255.255.255.255
+      # arguments ( Thread Name , Start IP address , End IP address , Timestamp , the using port source )
       t1 = Thread(target=scan ,args=('Thread1','0.0.0.0'     , '153.16.6.255' , Timestamp ,port_source ))
       t2 = Thread(target=scan, args=('Thread2','153.16.7.0'   , '153.16.27.255' , Timestamp ,port_source+1))
       t3 = Thread(target=scan, args=('Thread3', '153.16.28.0', '153.16.48.255' , Timestamp ,port_source+2))
@@ -174,9 +169,7 @@ if __name__ == '__main__':
       for x in Threads :
           x.join()
 
-
-
-
+      # Display the ending  Time for the crawler
       print(time.strftime(' %a , %l:%M%p %z on %b %d, %Y'))  # ' 1:36PM EST on Oct 18, 2010'
 
 

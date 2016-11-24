@@ -15,9 +15,9 @@ from numpy import*
 def scan( Name , Start , End , Timestamp):
 
 
-    map_resolver = str('137.194.18.132')
+    map_resolver = str('137.194.18.132') # the Map Resolver which will be tested
 
-    # Display the starting Time
+    # Display the starting Time for the Thread
     print('Thread ' + Name + ' started ' + time.strftime(' %a , %l:%M%p %z on %b %d, %Y')) # ' 1:36PM EST on Oct 18, 2010'
 
     i=1
@@ -83,7 +83,7 @@ def scan( Name , Start , End , Timestamp):
             rtt = (after - before)* 1000
 
         except socket.timeout:
-            #display_information.display(None , 0, Start, map_resolver, ip_my , Timestamp=Timestamp , rtt= None , sender_addr= None  , resolver_num=1 )
+
             print('processing ' + Name + '...')
             print('No')
             nextint = int(ipaddress.IPv4Address(Start)) + 1
@@ -99,12 +99,12 @@ def scan( Name , Start , End , Timestamp):
 
         # LISP Map Reply, there are records
         if len(map_reply.records[0].locator_records) != 0:
-            #display_information.display(map_reply , 1 , Start , map_resolver , ip_my , rtt , sender_addr , Timestamp , resolver_num=1)
+
             print('processing' + Name + '...')
             print('yes')
         # negative Map Reply
         else:
-            #display_information.display(map_reply, -1, Start , map_resolver , ip_my , rtt , sender_addr , Timestamp , resolver_num=1)
+
             print('processing' + Name + '...')
             print('yes')
         #incrementation adresse IP
@@ -116,7 +116,7 @@ def scan( Name , Start , End , Timestamp):
            i = i+1
         else:
             break
-
+    # Display the ending  Time for the Thread
     print(time.strftime(' %a , %l:%M%p %z on %b %d, %Y')) # ' 1:36PM EST on Oct 18, 2010'
     print ('scanning done  ' + Name)
 
@@ -125,40 +125,21 @@ if __name__ == '__main__':
 
       Threads = []
 
-      #Get Timestamp
-      #controller = open('controller.log' , 'r')
-      #Timestamp = controller.readline().strip('\n')
+
       Timestamp = int(time.time())
 
 
-      #create the EID_Prefix list
-      #list = open('summary/EID_list_' + str(Timestamp) + '.log', 'w+')
 
 
-      # Scanning the IPs from 0.0.0.0 to 255.255.255.255
-      t1 = Thread(target=scan ,args=('Thread1','0.0.0.0'     , '153.16.6.255' , Timestamp))
-      t2 = Thread(target=scan, args=('Thread2','153.16.7.0'   , '153.16.17.255' , Timestamp))
-      t3 = Thread(target=scan, args=('Thread3', '153.16.18.0', '153.16.25.255' , Timestamp))
-      t4 = Thread(target=scan, args=('Thread4','153.16.26.0' , '153.16.39.255' , Timestamp ))
-      t5 = Thread(target=scan, args=('Thread5','153.16.40.0', '153.16.54.255' , Timestamp ))
-      t6 = Thread(target=scan, args=('Thread6','153.16.55.0', '153.16.127.255' , Timestamp ))
-      t7 = Thread(target=scan, args=('Thread7','153.16.128.0', '153.16.144.255' , Timestamp ))
-      t8 = Thread(target=scan, args=('Thread8','153.16.145.0', '153.16.150.255' , Timestamp))
-      t9 = Thread(target=scan, args=('Thread9','153.16.151.0', '153.16.155.255' , Timestamp))
-      t10 = Thread(target=scan,args=('Thread10','153.16.156.0', '255.255.255.255' , Timestamp))
-      #t11 = Thread(target=scan,args=('Thread11','153.16.203.0'  , '255.255.255.255' , Timestamp))
+
+      # Scanning the IP address space which will be tested
+      t1 = Thread(target=scan ,args=('Thread1','0.0.0.0' , '153.16.6.255' , Timestamp))
+
+
 
       Threads.append(t1)
-      Threads.append(t2)
-      Threads.append(t3)
-      Threads.append(t4)
-      Threads.append(t5)
-      Threads.append(t6)
-      Threads.append(t7)
-      Threads.append(t8)
-      Threads.append(t9)
-      Threads.append(t10)
-      #Threads.append(t11)
+
+
 
       for x in Threads :
           x.start()
@@ -167,7 +148,7 @@ if __name__ == '__main__':
 
 
 
-
+      # Display the ending  Time for the crawler
       print(time.strftime(' %a , %l:%M%p %z on %b %d, %Y'))  # ' 1:36PM EST on Oct 18, 2010'
 
       # Copy the EIDs_Prefix list

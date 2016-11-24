@@ -4,12 +4,16 @@ import csv
 import glob
 from ipaddress import IPv4Address, IPv4Network
 
+
+# List of the Map Resolver which will be measured
 map_resolvers  = ['217.8.97.6', '217.8.98.42' , '193.162.145.50' , '149.20.48.61' , '149.20.48.77' , '206.223.132.89' , '202.214.86.252' , '202.51.247.10'] # 3*EUROP , 3*US , 2*ASIA
 
-
+# Getting the Timestamp
 list_TSP = open('Timestamp_list.log' , 'r')
 TSPs_list = list_TSP.readlines()
 TSPs = []
+
+# the Start and End Timestamp which you want to set the interval
 TSP_Start = ''
 TSP_END = ''
 Interval = False
@@ -29,9 +33,10 @@ else:
         TSPs.append(TSP.strip('\n'))
 
 
-
+# collecting the data for each Map Resolver
 for map_resolver in map_resolvers:
    print(map_resolver)
+   # Set the headers of the file
    table_stability_headers = [ ['EID Prefix', 'Reply Type', 'Received From', 'RLOC Addresses', 'RLOC Priorities', 'RLOC Weights','RLOC States', 'New Deployed Changed', 'Configuration Changed ' , 'Statistical Changed', 'Recieved From Changed' , 'Received From not RLOCs '  , 'Received From RLOCs '  , 'Received From Map Resolver ' , 'Number of Timestamp' , 'Total Number of Timestamp']]
    with open('Tables/' + str(map_resolver) + '-stability.csv', 'w', newline='') as fp:
        a = csv.writer(fp, delimiter=',')
@@ -213,13 +218,13 @@ for map_resolver in map_resolvers:
 
 
       if RLOC_numbers == '0':
-
+          # Write the collected data for the Negative Map-Reply in '-Negative.csv'
           table_stability = [[str(EID_Prefix)] + ['Negative Reply'] + [received_from] + [RLOC_adds] + [RLOC_priorities] + [RLOC_weights] + [RLOC_states] + [str(new_deployed_count)] + [str(config_count)] +  [str(Statistical_count)] + [str(received_from_count)] + [str(received_from_out_count)] + [str(received_from_RLOCs)] + [str(received_from_MR)] + [str(counter_TSP)] + [str(len(TSPs))]]
           with open('Tables/' + str(map_resolver) + '-stability.csv', 'a', newline='') as fp:
               a = csv.writer(fp, delimiter=',')
               a.writerows(table_stability)
       elif RLOC_numbers != '':
-
+          # Write the collected data for the LISP Map-Reply in '-LISP.csv'
           table_stability = [[str(EID_Prefix)] + ['LISP Reply'] + [received_from] + [RLOC_adds] + [RLOC_priorities] + [RLOC_weights] + [RLOC_states] + [str(new_deployed_count)] + [str(config_count)] +  [str(Statistical_count)] + [str(received_from_count)]  + [str(received_from_out_count)] + [str(received_from_RLOCs)] + [str(received_from_MR)] +[str(counter_TSP)] + [str(len(TSPs))]]
           with open('Tables/' + str(map_resolver) + '-stability.csv', 'a', newline='') as fp:
               a = csv.writer(fp, delimiter=',')

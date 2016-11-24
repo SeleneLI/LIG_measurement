@@ -83,14 +83,14 @@ dates = matplotlib.dates.date2num(TSPs)  # let the Timestamps readable
 
 plt.figure(figsize=(20, 9))  # adjust the size of the figure
 # Plot the LISP reply for Map resolvers
-
+color = [ 'r' , 'g' , 'b' , 'k' , 'y' , 'indigo' , 'c' , 'm']
 for x in range(0 , len(map_resolvers)) :
     del mapping_lists[x][14]
     del mapping_lists[x][15]
-    plt.plot_date(dates, mapping_lists[x]  , ls= '-' , marker='' , label = 'MR ' + str(x+1) )
+    plt.plot_date(dates, mapping_lists[x]  , ls= '-' , marker='' , color= color[x] ,label = 'MR ' + str(x+1) )
 
 #Plot the LISP Reply for LISPmon
-plt.plot_date(dates, mapping_list_LISPmon, ls='-', marker='' , label = 'LISPmon' , linewidth= 2)
+plt.plot_date(dates, mapping_list_LISPmon, ls='-', marker='' , label = 'LISPmon' , linewidth= 3)
 
 
 #Plot the overall LISP Replies
@@ -100,7 +100,7 @@ for x in mapping_overall:
 
 del mapping_overall_number[14]
 del mapping_overall_number[15]
-plt.plot_date(dates, mapping_overall_number, ls='-', marker='' , label = 'overall' , linewidth= 2)
+plt.plot_date(dates, mapping_overall_number, ls='-', marker='' , label = 'overall' , linewidth= 3)
 
 
 #Setting
@@ -116,8 +116,6 @@ plt.ylabel(' number of LISP mappings ')
 lgd = plt.legend( bbox_to_anchor=(1.01, 1.), loc=2, borderaxespad=0.)
 plt.gcf().autofmt_xdate()
 
-#plt.xticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
-#plt.yticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
 # To check if the Figures path exists, otherise we create one
 try:
     os.stat(os.path.join(FIGURE_PATH))

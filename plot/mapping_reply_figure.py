@@ -60,8 +60,7 @@ for map_resolver in map_resolvers:
 
    plt.gcf().autofmt_xdate()
 
-   # plt.xticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
-   # plt.yticks(fontsize=fontTick['fontsize'], fontname="Times New Roman")
+
    # To check if the Figures path exists, otherise we create one
    try:
        os.stat(os.path.join(FIGURE_PATH))
